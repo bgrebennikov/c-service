@@ -12,7 +12,13 @@ class ContactDataSourceImpl : ContactDataSource, KoinComponent {
     private val contacts = db.getCollection<ContactsEntity>()
 
     override suspend fun get(): ContactsEntity? {
-        return contacts.find().first()
+        return contacts.find().first() ?: ContactsEntity(
+            phone = "79991710011",
+            whatsapp = "79991710011",
+            viber = "79991710011",
+            email = "bgrebennikovv@gmail.com",
+            telegram = "mrx2000"
+        )
     }
 
     override suspend fun update(contactsEntity: ContactsEntity): Boolean {
