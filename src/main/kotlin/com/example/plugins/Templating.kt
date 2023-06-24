@@ -7,24 +7,41 @@ import io.ktor.server.response.*
 import io.ktor.server.application.*
 import io.ktor.server.routing.*
 import org.koin.ktor.ext.inject
+import javax.swing.text.MaskFormatter
 
 fun Application.configureTemplating() {
 
-    val contacts : ContactsService by inject()
+    val contacts: ContactsService by inject()
 
     install(FreeMarker) {
         templateLoader = ClassTemplateLoader(this::class.java.classLoader, "templates")
     }
     routing {
         get {
-            call.respond(FreeMarkerContent("index.ftl", mapOf("contacts" to contacts.get()), ""))
+            val contactsValues = contacts.get()
+
+            val phoneMask = MaskFormatter("# (###) ###-##-##").apply {
+                valueContainsLiteralCharacters = false
+            }
+            val phoneFormatted = phoneMask.valueToString(contactsValues?.phone)
+
+            call.respond(
+                FreeMarkerContent(
+                    "index.ftl", mapOf(
+                        "contacts" to contactsValues,
+                        "phoneFormatted" to phoneFormatted
+                    ), ""
+                )
+            )
         }
 
         get("/thx") {
-            call.respond(FreeMarkerContent(
-                "thx.ftl",
-                null
-            ))
+            call.respond(
+                FreeMarkerContent(
+                    "thx.ftl",
+                    null
+                )
+            )
         }
     }
 }

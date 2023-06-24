@@ -16,7 +16,7 @@
 </head>
 <body>
 <div type="button" class="callback-bt">
-    <a class="call-button" href="tel:+79879009975">
+    <a class="call-button" href="tel:+${contacts.phone}">
         <div class="text-call">
             <i class="fa fa-phone"><img style="width: 25px;" src="static/img/call.svg" alt=""></i>
         </div>
@@ -28,7 +28,7 @@
             <div class="logo">
                 <span>Георгий Крылов</span>
                 <p>Ремонтирую компьютеры,<br>
-                    ноутбуки и моноблоки с 2017 года.</p>
+                    ноутбуки и моноблоки с 2013 года.</p>
             </div>
             <div class="adr">
                 <img src="static/img/adr.jpg" alt="">
@@ -37,22 +37,22 @@
             <div class="tel">
                 <span>
                         <div class="pek">
-                                <a class="social" href="https://wa.me/79879009975">
+                                <a class="social" href="https://wa.me/${contacts.whatsapp}">
                                     <img src="static/img/whatsapp.png" alt="">
                                     </a>
 
-                                    <a class="social" href="viber://chat?number=79879009975">
+                                    <a class="social" href="viber://chat?number=${contacts.viber}">
                                     <img src="static/img/viber.png" alt="">
                                     </a>
 
-                                    <a class="social" href="tg://resolve?domain=">
+                                    <a class="social" href="tg://resolve?domain=${contacts.telegram}">
                                     <img src="static/img/telegram.png" alt="">
                                     </a>
                             </div>
 
-                    <a class="mgo-number" href="tel:+79879009975">+${contacts.phone}</a>
+                    <a class="mgo-number" href="tel:+${contacts.phone}">+${phoneFormatted}</a>
                 </span>
-                <p>Работаем с 7:00 до 23:00</p>
+                <p>Работаю 24/7</p>
             </div>
         </div>
 
@@ -64,7 +64,7 @@
                         <img class="bounce-1" src="static/img/otvertka.png" alt="">
                         <img class="bounce-2" src="static/img/cooler.png" alt="">
                     </div>
-                    <img src="static/img/me.jpg" alt="">
+                    <img src="static/img/master-sq.png" alt="">
                 </div>
                 <h1>Грамотный ремонт компьютеров <br>
                     <span>на дому в Самаре и области от 190 руб</span></h1>
@@ -432,12 +432,12 @@
             <div class="mastera1">
                 <img data-src="static/img/me.jpg" alt="">
                 <br/>
-                <span>Георгий - опыт 7 лет</span>
+                <span>Георгий - опыт 10 лет</span>
                 <p>Мастер быстрого сервиса. Программист.</p>
             </div>
             <!--            <div class="mastera1">-->
             <!--                <img data-src="static/img/master2.png" alt="">-->
-            <!--                <span>Михаил - опыт 7 лет</span>-->
+            <!--                <span>Михаил - опыт 10 лет</span>-->
             <!--                <p>Мастер быстрого сервиса и инженер-схемотехник.</p>-->
             <!--            </div>-->
             <!--            <div class="mastera1">-->
@@ -458,7 +458,7 @@
         <div class="zayavka_left">
             <h4>Не знаете что у вас сломалось,
                 Вам нужна консультация мастера ?</h4>
-            <p>Опытный специалист со стажем работы более 7 лет,
+            <p>Опытный специалист со стажем работы более 10 лет,
                 в сфере компьютерной техники, проконсультируют
                 вас и по необходимости решат вашу проблему в
                 кратчайшие сроки
@@ -468,19 +468,19 @@
                 номеру телефона:</p>
             <div class="row">
                 <div class="pek">
-                    <a class="social" href="https://wa.me/79033086777">
+                    <a class="social" href="https://wa.me/${contacts.whatsapp}">
                         <img src="static/img/whatsapp.png" alt="">
                     </a>
 
-                    <a class="social" href="viber://chat?number=89033086777">
+                    <a class="social" href="viber://chat?number=${contacts.viber}">
                         <img src="static/img/viber.png" alt="">
                     </a>
 
-                    <a class="social" href="tg://resolve?domain=Remontpksamara">
+                    <a class="social" href="tg://resolve?domain=${contacts.telegram}">
                         <img src="static/img/telegram.png" alt="">
                     </a>
                 </div>
-                <a class="mgo-number" href="tel:+79879009975">+7 987 900-99-75</a>
+                <a class="mgo-number" href="tel:+${contacts.phone}">${phoneFormatted}</a>
             </div>
         </div>
         <div class="zayavka_right">
@@ -581,7 +581,7 @@
             <div class="logo">
                 <span>Георгий Крылов</span>
                 <p>Ремонтирую компьютеры,<br>
-                    ноутбуки и моноблоки с 2017 года.</p>
+                    ноутбуки и моноблоки с 2013 года.</p>
             </div>
             <div class="adr">
                 <img data-src="static/img/adr.jpg" alt="">
@@ -590,20 +590,20 @@
             <div class="tel">
                                 <span>
                                         <div class="pek">
-                                                <a class="social" href="https://wa.me/79879009975">
+                                                <a class="social" href="https://wa.me/${contacts.whatsapp}">
                                                     <img src="static/img/whatsapp.png" alt="">
                                                     </a>
 
-                                                    <a class="social" href="viber://chat?number=79879009975">
+                                                    <a class="social" href="viber://chat?number=${contacts.viber}">
                                                     <img src="static/img/viber.png" alt="">
                                                     </a>
 
-                                                    <a class="social" href="tg://resolve?domain=Remontpksamara">
+                                                    <a class="social" href="tg://resolve?domain=${contacts.telegram}">
                                                     <img src="static/img/telegram.png" alt="">
                                                     </a>
                                             </div>
-                                    <a class="mgo-number" href="tel:+79879009975">+7 (987) 90-09-975</a></span>
-                <p>Работаем с 24/7</p>
+                                    <a class="mgo-number" href="tel:+${contacts.phone}">${phoneFormatted}</a></span>
+                <p>Работаю 24/7</p>
             </div>
         </div>
         <!--

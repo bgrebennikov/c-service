@@ -10,15 +10,26 @@ class ContactsServiceImpl : ContactsService, KoinComponent {
     private val contactsDs : ContactDataSource by inject()
 
     override suspend fun get(): ContactsEntity? {
-//        contactsDs.update(
-//            ContactsEntity(
-//                phone = "79879009975",
-//                whatsapp = "79879009975",
-//                viber = "79879009975",
-//                telegram = "mrx2000",
-//                email = "bgrebennikovv@gmail.com"
-//            )
-//        )
         return contactsDs.get()
+    }
+
+    override suspend fun updatePhone(phone: String): Boolean {
+        return contactsDs.updateOne(ContactsEntity::phone, phone)
+    }
+
+    override suspend fun updateEmail(email: String): Boolean {
+        return contactsDs.updateOne(ContactsEntity::email, email)
+    }
+
+    override suspend fun updateViber(viber: String): Boolean {
+        return contactsDs.updateOne(ContactsEntity::viber, viber)
+    }
+
+    override suspend fun updateWhatsApp(whatsapp: String): Boolean {
+        return contactsDs.updateOne(ContactsEntity::whatsapp, whatsapp)
+    }
+
+    override suspend fun updateTelegram(telegram: String): Boolean {
+        return contactsDs.updateOne(ContactsEntity::telegram, telegram)
     }
 }
