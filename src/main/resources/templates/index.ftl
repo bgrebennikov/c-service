@@ -15,11 +15,6 @@
     <script src="/static/js/feedback.js"></script>
 </head>
 <body>
-
-<#list images as x>
-    <h1>item: ${x}</h1>
-</#list>
-
 <div type="button" class="callback-bt">
     <a class="call-button" href="tel:+${contacts.phone}">
         <div class="text-call">
