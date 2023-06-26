@@ -29,7 +29,8 @@ fun Application.configureTemplating() {
                 FreeMarkerContent(
                     "index.ftl", mapOf(
                         "contacts" to contactsValues,
-                        "phoneFormatted" to phoneFormatted
+                        "phoneFormatted" to phoneFormatted,
+                        "images" to listOf("Image1", "Image2", "Image3")
                     ), ""
                 )
             )

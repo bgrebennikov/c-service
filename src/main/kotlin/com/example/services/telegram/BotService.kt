@@ -2,6 +2,8 @@ package com.example.services.telegram
 
 import com.example.data.telegram.states.BotState
 import com.example.services.contacts.ContactsService
+import com.example.services.telegram.ext.mainKeys
+import com.example.services.telegram.handlers.ContactsHandler
 import dev.inmo.tgbotapi.bot.TelegramBot
 import dev.inmo.tgbotapi.bot.ktor.telegramBot
 import dev.inmo.tgbotapi.extensions.api.send.send
@@ -38,6 +40,8 @@ class BotService : KoinComponent{
 
     private val scope = CoroutineScope(Dispatchers.IO)
 
+    private val contactsHandler = ContactsHandler()
+
     fun start() {
         scope.launch {
             telegramBotWithBehaviourAndFSMAndStartLongPolling(
@@ -54,54 +58,11 @@ class BotService : KoinComponent{
                     sendWelcome(this, it.chat.id)
                 }
 
+                contactsHandler.onReceive(this)
+
                 onText {
-                    when (it.content.text) {
-                        "Изменить контакты" -> {
-                            sendMessage(
-                                it.chat.id, "Какую информацию необходимо поменять?", replyMarkup = ReplyKeyboardMarkup(
-                                    matrix {
-                                        row {
-                                            +SimpleKeyboardButton("Изменить Email")
-                                        }
-                                        row {
-                                            +SimpleKeyboardButton("Изменить Telegram")
-                                        }
-                                        row {
-
-                                            +SimpleKeyboardButton("Изменить Телефон")
-                                        }
-                                        row {
-                                            +SimpleKeyboardButton("Изменить Viber")
-                                        }
-                                        row {
-                                            +SimpleKeyboardButton("Изменить WhatsApp")
-                                        }
-
-                                        row {
-                                            +SimpleKeyboardButton("В меню")
-                                        }
-
-                                    },
-                                    oneTimeKeyboard = true,
-                                    resizeKeyboard = true
-                                )
-                            )
-                        }
-                        "Изменить Телефон" -> {
-                            val phone = waitText(
-                                SendTextMessage(it.chat.id,
-                                "Отправьте новый номер телефона"
-                                )
-                            ).first().text
-                            val updResult = contactsService.updatePhone(phone)
-                            if (updResult) sendMessage(it.chat.id, "Номер телефона обновлен")
-
-                        }
-                        "В меню" -> sendWelcome(this, it.chat.id)
-                    }
+                    if(it.content.text == "В меню") sendWelcome(this, it.chat.id)
                 }
-
-
 
 
             }.also {
@@ -114,18 +75,7 @@ class BotService : KoinComponent{
     private suspend fun sendWelcome(context: BehaviourContext, chaiId: IdChatIdentifier) {
         context.sendMessage(
             chaiId, "Выбери действие:",
-            replyMarkup = ReplyKeyboardMarkup(
-                matrix {
-                    row {
-                        +SimpleKeyboardButton("Изменить контакты")
-                    }
-                    row {
-                        +SimpleKeyboardButton("Настройки уведомлений")
-                    }
-                },
-                oneTimeKeyboard = true,
-                resizeKeyboard = true
-            )
+            replyMarkup = mainKeys
         )
     }
 

@@ -14,6 +14,7 @@ class ContactsServiceImpl : ContactsService, KoinComponent {
     }
 
     override suspend fun updatePhone(phone: String): Boolean {
+        if (phone.length  !in 11..12) throw Exception("Не верный формат номера телефона")
         return contactsDs.updateOne(ContactsEntity::phone, phone)
     }
 

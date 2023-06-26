@@ -15,6 +15,11 @@
     <script src="/static/js/feedback.js"></script>
 </head>
 <body>
+
+<#list images as x>
+    <h1>item: ${x}</h1>
+</#list>
+
 <div type="button" class="callback-bt">
     <a class="call-button" href="tel:+${contacts.phone}">
         <div class="text-call">
@@ -585,7 +590,11 @@
             </div>
             <div class="adr">
                 <img data-src="static/img/adr.jpg" alt="">
-                <p>г. Самара</p>
+                <div class="adr_info">
+                    <h5>г. Самара</h5>
+                    <p>Юбилейная 15а, Кировский район, Самара 443092</p>
+                    <p>ИНН: 636600279657</p>
+                </div>
             </div>
             <div class="tel">
                                 <span>
