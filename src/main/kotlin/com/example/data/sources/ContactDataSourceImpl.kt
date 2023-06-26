@@ -32,7 +32,8 @@ class ContactDataSourceImpl : ContactDataSource, KoinComponent {
             ContactsEntity::id eq ObjectId(uid).toString(),
             set(
                 field setTo value
-            )
+            ),
+            upsert()
         )
 
         return upd.wasAcknowledged()
