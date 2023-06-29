@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/font/stylesheet.css">
-    <title>Ремонт компьютеров в Самаре | МастерКомп</title>
-    <meta name="description" content="Ремонт компьютеров в Самаре. У вас сломался ПК, ноутбук или моноблок ? Команда МастерКомп профессионально и в кратчайшие сроки поможет устранить вашу проблему. Оставьте заявку на сайте или звоните по номеру: +7 (937) 233-33-40">
+    <title>Ремонт компьютеров в Самаре | Мастер крылов</title>
+    <meta name="description" content="Ремонтирую компьютеры, ноутбуки, моноблоки и другую технику с 2013 года. Выезд на дом, бесплатная диагностика, гарантия до 3х лет! Тел: +7(987)900-99-75 (Георгий)">
+    <meta name="keywords" content="частный, мастер, самара, область, ремонт, пк, компьютеров, ноутбуков, моноблоков, планшетов, сервис, гарантия, выезд, пайка, диагностика, восстановление, установка, антивирус, чистка, обслуживание, переустановка, windows, macos, linux, процессор, системный, блок, диск">
     <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -764,8 +765,24 @@
 </script>
 <script src="https://rawgit.com/RobinHerbots/Inputmask/4.x/dist/jquery.inputmask.bundle.js"></script>
 
-<!--mask-->
 
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(94155344, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/94155344" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 
 <!--<script>-->
 <!--    YaMapsShown = false;-->
