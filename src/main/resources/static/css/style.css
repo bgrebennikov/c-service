@@ -2034,7 +2034,6 @@
         display: flex;
         align-items: center;
         margin: 20px auto;
-        display: none;
     }
     .adr img {
         width: 40px;
@@ -2042,6 +2041,7 @@
         border-radius: 50px;
         border: 2px solid #0084ff;
         margin-right: 10px;
+        display: none;
     }
 
     .tel {

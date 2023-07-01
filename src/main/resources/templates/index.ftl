@@ -590,6 +590,7 @@
                     <h5>г. Самара</h5>
                     <p>Юбилейная 15а, Кировский район, Самара 443092</p>
                     <p>ИНН: 636600279657</p>
+                    <p>Телефон: ${phoneFormatted}</p>
                 </div>
             </div>
             <div class="tel">
@@ -609,6 +610,7 @@
                                             </div>
                                     <a class="mgo-number" href="tel:+${contacts.phone}">${phoneFormatted}</a></span>
                 <p>Работаю 24/7</p>
+
             </div>
         </div>
         <!--
@@ -731,9 +733,6 @@
                     slidesToScroll: 1
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
     });
 </script>
@@ -782,35 +781,6 @@
     });
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/94155344" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-
-<!--<script>-->
-<!--    YaMapsShown = false;-->
-<!--</script>-->
-
-<!--<script>-->
-<!--    $(document).ready(function (){-->
-<!---->
-<!--        $(window).scroll(function() {-->
-<!--            if (!YaMapsShown){-->
-<!--                if($(window).scrollTop() + $(window).height() > $(document).height() - 2000) {-->
-<!--                    showYaMaps();-->
-<!--                    YaMapsShown = true;-->
-<!--                }-->
-<!--            }-->
-<!--        });-->
-<!---->
-<!--    });-->
-<!--</script>-->
-<!---->
-<!--<script>-->
-<!--    function showYaMaps(){-->
-<!--        var script   = document.createElement("script");-->
-<!--        script.type  = "text/javascript";-->
-<!--        script.src   = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab547a7c7aa2e3a6b4b9277d3cda084f54117b107e346093b3d1058157005ea57&amp;width=100%25&amp;height=461&amp;lang=ru_RU&amp;scroll=false";-->
-<!--        document.getElementById("YaMaps").appendChild(script);-->
-<!--    }-->
-<!--</script>-->
 
 
 </body>
