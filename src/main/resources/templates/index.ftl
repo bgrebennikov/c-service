@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/font/stylesheet.css">
     <title>Ремонт компьютеров в Самаре | Мастер крылов</title>
-    <meta name="description" content="Ремонтирую компьютеры, ноутбуки, моноблоки и другую технику с 2013 года. Выезд на дом, бесплатная диагностика, гарантия до 3х лет! Тел: +7(987)900-99-75 (Георгий)">
-    <meta name="keywords" content="частный, мастер, самара, область, ремонт, пк, компьютеров, ноутбуков, моноблоков, планшетов, сервис, гарантия, выезд, пайка, диагностика, восстановление, установка, антивирус, чистка, обслуживание, переустановка, windows, macos, linux, процессор, системный, блок, диск">
+    <meta name="description"
+          content="Ремонтирую компьютеры, ноутбуки, моноблоки и другую технику с 2013 года. Выезд на дом, бесплатная диагностика, гарантия до 3х лет! Тел: +7(987)900-99-75 (Георгий)">
+    <meta name="keywords"
+          content="частный, мастер, самара, область, ремонт, пк, компьютеров, ноутбуков, моноблоков, планшетов, сервис, гарантия, выезд, пайка, диагностика, восстановление, установка, антивирус, чистка, обслуживание, переустановка, windows, macos, linux, процессор, системный, блок, диск">
     <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -42,7 +44,7 @@
                                     <img src="static/img/whatsapp.png" alt="">
                                     </a>
 
-                                    <a class="social" href="viber://chat?number=${contacts.viber}">
+                                    <a class="social" href="viber://chat?number=%2B${contacts.viber}">
                                     <img src="static/img/viber.png" alt="">
                                     </a>
 
@@ -127,12 +129,13 @@
                                     <label for="">Ваш номер</label>
                                     <input type="tel" name="phone" id="phone" placeholder="+7 (999) 999-99-99">
                                     <div class="button">
-                                        <button  class="feedback">
+                                        <button class="feedback">
                                             Оставить заявку
                                         </button>
                                     </div>
                                     <br>
-                                    <small style="color: #b9b9b9; line-height: 150%;">*Частный мастер, который не навязывает доп.услуги и озвучивают честные цены до начала работ</small>
+                                    <small style="color: #b9b9b9; line-height: 150%;">*Частный мастер, который не
+                                        навязывает доп.услуги и озвучивают честные цены до начала работ</small>
                                 </form>
                             </div>
                         </div>
@@ -167,7 +170,8 @@
                     <img data-src="static/img/bp.png" alt="">
                     <div class="txt_noob">
                         <span>Компьютер не включается</span>
-                        <p>Причиной может быть неисправность блока питания, кнопки питания, нарушение цепи питания на материнской плате. Часто это связано с перепадами напряжения</p>
+                        <p>Причиной может быть неисправность блока питания, кнопки питания, нарушение цепи питания на
+                            материнской плате. Часто это связано с перепадами напряжения</p>
                         <b>от 350 руб</b>
                         <div class="button puk">
                             <button class="modal_btn2">
@@ -184,7 +188,8 @@
                     <img data-src="static/img/mat.png" alt="">
                     <div class="txt_noob">
                         <span>Компьютер зависает</span>
-                        <p>Причина может быть как программной (ошибки операционной системы, вирусы) так и аппаратной (плохое состояние жесткого диска или оперативной памяти)</p>
+                        <p>Причина может быть как программной (ошибки операционной системы, вирусы) так и аппаратной
+                            (плохое состояние жесткого диска или оперативной памяти)</p>
                         <b>от 350 руб</b>
                         <div class="button puk">
                             <button class="modal_btn2">
@@ -201,7 +206,8 @@
                     <img data-src="static/img/cool.png" alt="">
                     <div class="txt_noob">
                         <span>Компьютер греется и шумит</span>
-                        <p>Как правило, это свидетельство накопившейся пыли внутри системного блока, засохшей термопасты или вышедшей из строя системы охлаждения</p>
+                        <p>Как правило, это свидетельство накопившейся пыли внутри системного блока, засохшей термопасты
+                            или вышедшей из строя системы охлаждения</p>
                         <b>от 450 руб</b>
                         <div class="button puk">
                             <button class="modal_btn2">
@@ -217,7 +223,8 @@
                     <img data-src="static/img/monik.png" alt="">
                     <div class="txt_noob">
                         <span>Нет изображения</span>
-                        <p>В большинстве случаев причина кроется в неисправности видеокарты, оперативной памяти, северного моста материнской платы или монитора</p>
+                        <p>В большинстве случаев причина кроется в неисправности видеокарты, оперативной памяти,
+                            северного моста материнской платы или монитора</p>
                         <b>от 450 руб</b>
                         <div class="button puk">
                             <button class="modal_btn2">
@@ -399,10 +406,6 @@
             </div>
 
 
-
-
-
-
             <!--9-->
             <div class="border3">
                 <div class="usluga">
@@ -428,7 +431,8 @@
 </section>
 <section>
     <div class="container">
-        <h3>Дипломированный инженер<span style="display: block; font-weight: 400;margin-top: 25px; font-size: 19px;">Профессионализм и высокий уровень обслуживания</span></h3>
+        <h3>Дипломированный инженер<span style="display: block; font-weight: 400;margin-top: 25px; font-size: 19px;">Профессионализм и высокий уровень обслуживания</span>
+        </h3>
         <div class="mastera">
             <div class="mastera1">
                 <img data-src="static/img/me.jpg" alt="">
@@ -436,21 +440,7 @@
                 <span>Георгий - опыт 10 лет</span>
                 <p>Мастер быстрого сервиса. Программист.</p>
             </div>
-            <!--            <div class="mastera1">-->
-            <!--                <img data-src="static/img/master2.png" alt="">-->
-            <!--                <span>Михаил - опыт 10 лет</span>-->
-            <!--                <p>Мастер быстрого сервиса и инженер-схемотехник.</p>-->
-            <!--            </div>-->
-            <!--            <div class="mastera1">-->
-            <!--                <img data-src="static/img/master3.png" alt="">-->
-            <!--                <span>Илья - опыт 11 лет</span>-->
-            <!--                <p>Сервисный инженер. Мастер по пайке.</p>-->
-            <!--            </div>-->
-            <!--            <div class="mastera1">-->
-            <!--                <img data-src="static/img/master4.png" alt="">-->
-            <!--                <span>Игорь - опыт 8 лет.</span>-->
-            <!--                <p>Мастер быстрого сервиса. Обучает специалистов.</p>-->
-            <!--            </div>-->
+
         </div>
     </div>
 </section>
@@ -458,9 +448,9 @@
     <div class="container zayavka">
         <div class="zayavka_left">
             <h4>Не знаете что у вас сломалось,
-                Вам нужна консультация мастера ?</h4>
+                Вам нужна консультация мастера?</h4>
             <p>Опытный специалист со стажем работы более 10 лет,
-                в сфере компьютерной техники, проконсультируют
+                в сфере компьютерной техники, проконсультирует
                 вас и по необходимости решат вашу проблему в
                 кратчайшие сроки
             </p>
@@ -473,7 +463,7 @@
                         <img src="static/img/whatsapp.png" alt="">
                     </a>
 
-                    <a class="social" href="viber://chat?number=${contacts.viber}">
+                    <a class="social" href="viber://chat?number=%2B${contacts.viber}">
                         <img src="static/img/viber.png" alt="">
                     </a>
 
@@ -500,7 +490,8 @@
                             </button>
                         </div>
                         <br>
-                        <small style="color: #b9b9b9; line-height: 150%;">*Высококлассный специалист, который не навязывает доп.услуги и озвучивает честные цены до начала работ</small>
+                        <small style="color: #b9b9b9; line-height: 150%;">*Высококлассный специалист, который не
+                            навязывает доп.услуги и озвучивает честные цены до начала работ</small>
                     </form>
                 </div>
             </div>
@@ -512,69 +503,25 @@
         <h3>Что пишут о моей работе</h3>
         <div class="otzivi multiple-items">
             <div class="otz">
-                <img src="static/img/1.jpg" alt="">
+                <img src="static/img/review1.jpg" alt="">
             </div>
             <div class="otz">
-                <img src="static/img/2.jpg" alt="">
+                <img src="static/img/review2.png" alt="">
             </div>
             <div class="otz">
-                <img src="static/img/3.jpg" alt="">
+                <img src="static/img/review3.png" alt="">
             </div>
             <div class="otz">
-                <img src="static/img/4.jpg" alt="">
+                <img src="static/img/review4.png" alt="">
             </div>
             <div class="otz">
-                <img src="static/img/5.jpg" alt="">
+                <img src="static/img/review5.png" alt="">
             </div>
             <div class="otz">
-                <img src="static/img/6.jpg" alt="">
+                <img src="static/img/review6.png" alt="">
             </div>
         </div>
-        <!--        <div class="video_otzivi">-->
-        <!--            <div class="video_otz">-->
-        <!--                <div class="vid_otz">-->
-        <!--                    <div class="lazyYT" data-youtube-id="FYEPcSOR6j8" data-ratio="16:9" ></div>-->
-        <!--                </div>-->
-        <!---->
-        <!--                <div class="vid_otz">-->
-        <!--                    <div class="lazyYT" data-youtube-id="l1LM-SKj4fM" data-ratio="16:9" ></div>-->
-        <!--                </div>-->
-        <!---->
-        <!---->
-        <!--            </div>-->
-        <!--        </div>-->
     </div>
-</section>
-<section class="footer" style="padding: 0 0;">
-
-    <!--    <div class="map">-->
-    <!--        <div class="border4">-->
-    <!--            <div class="usluga22">-->
-    <!--                <h3>Контакты</h3>-->
-    <!--                <div class="contact">-->
-    <!--                    <span>Почта:</span>-->
-    <!--                    <p><a href="mailto:trooporoob@yandex.ru">service-master-comp@yandex.ru</a></p>-->
-    <!--                    <span>Телефон:</span>-->
-    <!--                    <p><a class="mgo-number" href="tel:+79879009975">+7 (987) 900-99-75</a></p>-->
-    <!--                    <div class="pek">-->
-    <!--                        <a class="social" href="https://wa.me/79879009975">-->
-    <!--                            <img src="static/img/whatsapp.png" alt="">-->
-    <!--                        </a>-->
-    <!---->
-    <!--                        <a class="social" href="viber://chat?number=79879009975">-->
-    <!--                            <img src="static/img/viber.png" alt="">-->
-    <!--                        </a>-->
-    <!---->
-    <!--                        <a class="social" href="tg://resolve?domain=">-->
-    <!--                            <img src="static/img/telegram.png" alt="">-->
-    <!--                        </a>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--        <div class="" id="YaMaps"></div>-->
-    <!--    </div>-->
-
 </section>
 <footer>
     <div class="container">
@@ -600,7 +547,7 @@
                                                     <img src="static/img/whatsapp.png" alt="">
                                                     </a>
 
-                                                    <a class="social" href="viber://chat?number=${contacts.viber}">
+                                                    <a class="social" href="viber://chat?number=%2B${contacts.viber}">
                                                     <img src="static/img/viber.png" alt="">
                                                     </a>
 
@@ -613,11 +560,6 @@
 
             </div>
         </div>
-        <!--
-                <div class="arroweb">
-                        <a href="https://arroweb.ru/"><p>Разработка сайта -</p> <span>ArroWeb.ru</span></a>
-                </div>
-        -->
 
     </div>
 </footer>
@@ -646,7 +588,8 @@
                             </button>
                         </div>
                         <br>
-                        <small style="color: #b9b9b9; line-height: 150%;">*Высококлассный специалист, который не навязывает доп.услуги и озвучивает честные цены до начала работ</small>
+                        <small style="color: #b9b9b9; line-height: 150%;">*Высококлассный специалист, который не
+                            навязывает доп.услуги и озвучивает честные цены до начала работ</small>
                     </form>
                 </div>
             </div>
@@ -677,7 +620,8 @@
                             </button>
                         </div>
                         <br>
-                        <small style="color: #b9b9b9; line-height: 150%;">*Высококлассный специалист, который не навязывает доп.услуги и озвучивает честные цены до начала работ</small>
+                        <small style="color: #b9b9b9; line-height: 150%;">*Высококлассный специалист, который не
+                            навязывает доп.услуги и озвучивает честные цены до начала работ</small>
                     </form>
                 </div>
             </div>
@@ -687,13 +631,13 @@
 
 
 <script>
-    $(document).ready(function() {
-        $(document).on('click', '.modal_btn', function() {
+    $(document).ready(function () {
+        $(document).on('click', '.modal_btn', function () {
             $('#big-modal').arcticmodal();
         });
     });
-    $(document).ready(function() {
-        $(document).on('click', '.modal_btn2', function() {
+    $(document).ready(function () {
+        $(document).on('click', '.modal_btn2', function () {
             $('#big-modal2').arcticmodal();
         });
     });
@@ -719,35 +663,37 @@
 </script>
 
 <script>
-    $('.multiple-items').slick({
-        infinite: true,
-        slidesToShow: 2.9,
-        slidesToScroll: 1,
-        prevArrow: '<div class="prev"><img data-src="static/img/left-arrow.png" alt=""></div>',
-        nextArrow: '<div class="next"><img data-src="static/img/right-arrow.png" alt=""></div>',
-        responsive: [
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
+    $(document).ready(function() {
+        $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 2.9,
+            slidesToScroll: 1,
+            prevArrow: '<div class="prev"><img data-src="static/img/left-arrow.png" alt=""></div>',
+            nextArrow: '<div class="next"><img data-src="static/img/right-arrow.png" alt=""></div>',
+            responsive: [
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
                 }
-            }
-        ]
-    });
+            ]
+        });
+    })
 </script>
 <script src="/static/lazy/jquery.lazyloadxt.min.js"></script>
 <script>
-    [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+    [].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
         img.setAttribute('src', img.getAttribute('data-src'));
-        img.onload = function() {
+        img.onload = function () {
             img.removeAttribute('data-src');
         };
     });
 </script>
 
 <!--YOUTUBE LAZY-->
-<link href="/static/lazy/lazyYT.css" rel="stylesheet" />
+<link href="/static/lazy/lazyYT.css" rel="stylesheet"/>
 <script src="/static/lazy/lazyYT.js"></script>
 <script>
     $('.lazyYT').lazyYT();
@@ -756,8 +702,8 @@
 
 <!--mask-->
 <script>
-    ;(function($){
-        $(function(){
+    ;(function ($) {
+        $(function () {
             $('#phone,#phone2,#phone3,#phone4').inputmask("+7(999) 999-99-99");
         })
     }(jQuery));
@@ -766,21 +712,31 @@
 
 
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+<script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+            if (document.scripts[j].src === r) {
+                return;
+            }
+        }
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
     ym(94155344, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
     });
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/94155344" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/94155344" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
 
 
 </body>
