@@ -55,7 +55,7 @@
 
                     <a class="mgo-number" href="tel:+${contacts.phone}">+${phoneFormatted}</a>
                 </span>
-                <p>Работаю 24/7</p>
+                <p style="flex: 3">Работаю 24/7</p>
             </div>
         </div>
 
@@ -521,6 +521,36 @@
                 <img src="static/img/review6.png" alt="">
             </div>
         </div>
+    </div>
+</section>
+<section class="bgc contacts_block" id="contacts">
+    <div class="contacts_content">
+        <h3 style="text-align: start !important;">Контакты</h3>
+        <p><br>
+            Адресс:
+            Юбилейная 15а, ​Кировский район, Самара​ 443092
+        </p>
+        <br>
+        <p>
+            Email:
+            ${contacts.email}
+        </p>
+        <br>
+        <p>
+            Номер:
+            ${phoneFormatted}
+        </p>
+        <br>
+        <p>
+            ИНН: 636600279657
+        </p>
+        <br>
+        <h2>
+            Без выходных – 24/7 – в любом районе Самары
+        </h2>
+    </div>
+    <div class="maps_block">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A46e7f4b564cbbebf08ebb19ab893144398b943a0a7349d11697c3d36b80dd260&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
     </div>
 </section>
 <footer>
