@@ -33,7 +33,7 @@ fun Route.feedback(){
                 call.respond(cfgUseCase.invoke())
             }
             "form_zayavka" -> {
-                call.respond(CreateOrderUseCase().invoke(params.phone))
+                call.respond(CreateOrderUseCase().invoke(params.phone, ""))
             }
             else -> call.respond(HttpStatusCode.BadRequest)
         }

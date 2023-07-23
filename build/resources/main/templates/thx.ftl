@@ -19,7 +19,7 @@
 <div class="thanks container">
     <h5>Спасибо за обращение</h5>
     <p>Свяжусь с вами в течении 15 минут!</p>
-    <a href="/">
+    <a href="${redirectUrl}">
         <div class="form">
             <button>Вернуться на главную</button>
         </div>
@@ -92,6 +92,31 @@
     }
 
 </style>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+            if (document.scripts[j].src === r) {
+                return;
+            }
+        }
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(94155344, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+    });
+</script>
+
 </body>
 
 </html>

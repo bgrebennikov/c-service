@@ -36,8 +36,8 @@ dependencies {
 
     implementation("dev.inmo:tgbotapi:$tgbotapi_version")
 
-    implementation("org.litote.kmongo:kmongo:4.8.0")
-    implementation("org.litote.kmongo:kmongo-coroutine:4.8.0")
+    implementation("org.litote.kmongo:kmongo:4.9.0")
+    implementation("org.litote.kmongo:kmongo-coroutine:4.9.0")
 
     testImplementation("io.ktor:ktor-server-tests-jvm:$ktor_version")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")

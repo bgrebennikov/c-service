@@ -19,7 +19,7 @@
 <div class="thanks container">
     <h5>Спасибо за обращение</h5>
     <p>Свяжусь с вами в течении 15 минут!</p>
-    <a href="/">
+    <a href="${redirectUrl}">
         <div class="form">
             <button>Вернуться на главную</button>
         </div>
