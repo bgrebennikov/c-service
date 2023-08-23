@@ -23,7 +23,7 @@ fun Application.configureRouting() {
             sendFormRoute()
         }
 
-        host("call.xn-----6kcjnd6aiezscikejc8m.xn--p1ai"){
+        host("call.xn----7sbhk0agcvocgm6j.xn--p1ai"){
             route("/"){
                 callRedirectRoute()
             }
