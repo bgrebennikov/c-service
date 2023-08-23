@@ -11,19 +11,28 @@ import dev.inmo.tgbotapi.extensions.behaviour_builder.BehaviourContext
 import dev.inmo.tgbotapi.extensions.behaviour_builder.telegramBotWithBehaviourAndFSMAndStartLongPolling
 import dev.inmo.tgbotapi.extensions.behaviour_builder.triggers_handling.onCommand
 import dev.inmo.tgbotapi.extensions.behaviour_builder.triggers_handling.onText
+import dev.inmo.tgbotapi.extensions.utils.types.buttons.InlineKeyboardMarkup
+import dev.inmo.tgbotapi.extensions.utils.types.buttons.inlineKeyboard
+import dev.inmo.tgbotapi.extensions.utils.types.buttons.urlButton
 import dev.inmo.tgbotapi.types.ChatId
 import dev.inmo.tgbotapi.types.IdChatIdentifier
+import dev.inmo.tgbotapi.types.buttons.InlineKeyboardButtons.URLInlineKeyboardButton
+import dev.inmo.tgbotapi.types.buttons.ReplyKeyboardMarkup
+import dev.inmo.tgbotapi.types.buttons.SimpleKeyboardButton
+import dev.inmo.tgbotapi.types.buttons.inline.urlInlineButton
+import dev.inmo.tgbotapi.utils.matrix
+import dev.inmo.tgbotapi.utils.row
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 
-class BotService : KoinComponent{
+class BotService : KoinComponent {
 
-    private val contactsService : ContactsService by inject()
+    private val contactsService: ContactsService by inject()
 
-    private var bot: TelegramBot = telegramBot("6215463347:AAEA3y87LiGwTZ4X3E4e50U2BEAQaFLhlbc")
+        private var bot: TelegramBot = telegramBot("6215463347:AAEA3y87LiGwTZ4X3E4e50U2BEAQaFLhlbc")
 //    private var bot: TelegramBot = telegramBot("6398335632:AAGeTtM3yNHNZd_W1BH5mNzc8EqYWUmKLI0") // (test bot)
 
     private val scope = CoroutineScope(Dispatchers.IO)
@@ -49,7 +58,7 @@ class BotService : KoinComponent{
                 contactsHandler.onReceive(this)
 
                 onText {
-                    if(it.content.text == "В меню") sendWelcome(this, it.chat.id)
+                    if (it.content.text == "В меню") sendWelcome(this, it.chat.id)
                 }
 
 
@@ -67,7 +76,22 @@ class BotService : KoinComponent{
         )
     }
 
-    suspend fun sendNotification(text: String, toUser: Long) {
+    suspend fun sendNotification(text: String, toUser: Long, phone: String? = null) {
+
+        phone?.let {
+
+            bot.sendMessage(ChatId(toUser), text,
+                replyMarkup = inlineKeyboard {
+                    row {
+                        urlButton("Позвонить 💁", "http://call.xn-----6kcjnd6aiezscikejc8m.xn--p1ai:8080/$phone")
+                    }
+                }
+            )
+            return
+        }
+
+
+
         bot.sendTextMessage(ChatId(toUser), text)
     }
 

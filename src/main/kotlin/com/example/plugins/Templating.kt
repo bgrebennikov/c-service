@@ -1,15 +1,15 @@
 package com.example.plugins
 
-import com.example.plugins.landings.Langing1
+import com.example.plugins.landings.coolersRepairRoutes
+import com.example.plugins.landings.pcRepairRoutes
+import com.example.plugins.landings.washRepairRoutes
 import com.example.services.contacts.ContactsService
-import freemarker.cache.*
+import freemarker.cache.ClassTemplateLoader
 import io.ktor.http.*
+import io.ktor.server.application.*
 import io.ktor.server.freemarker.*
 import io.ktor.server.response.*
-import io.ktor.server.application.*
 import io.ktor.server.routing.*
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.runBlocking
 import org.koin.ktor.ext.inject
 import javax.swing.text.MaskFormatter
 
@@ -20,41 +20,32 @@ fun Application.configureTemplating() {
     }
     routing {
 
-        val contacts: ContactsService by inject()
-
-        Langing1()
-
-
-        get {
-            val contactsValues = contacts.get()
-            val phoneMask = MaskFormatter("# (###) ###-##-##").apply {
-                valueContainsLiteralCharacters = false
-            }
-            val phoneFormatted = phoneMask.valueToString(contactsValues?.phone)
-
-            call.respond(
-                FreeMarkerContent(
-                    "index.ftl", mapOf(
-                        "contacts" to contactsValues,
-                        "phoneFormatted" to phoneFormatted,
-                        "images" to listOf("Image1", "Image2", "Image3")
-                    ), ""
-                )
-            )
+        host(
+            "xn-----6kcjnd6aiezscikejc8m.xn--p1ai"
+        ){
+            pcRepairRoutes()
         }
 
-        get("/thx") {
-
-            val redirectUrl = call.parameters["redirectUrl"] ?: "/"
-            if (redirectUrl.contains("http")) call.respond(HttpStatusCode.BadRequest)
-
-            call.respond(
-                FreeMarkerContent(
-                    "thx.ftl",
-                    mapOf("redirectUrl" to redirectUrl)
-                )
-            )
+        host("xn----7sbhk0agcvocgm6j.xn--p1ai"){
+            pcRepairRoutes()
         }
+
+
+
+        host("washrepair.ru"){
+            washRepairRoutes()
+        }
+
+        host("xn----7sbbimc8alpkqkfi.xn--p1ai"){
+            washRepairRoutes()
+        }
+
+
+
+        host("coolersrepair.ru"){
+            coolersRepairRoutes()
+        }
+
     }
 }
 

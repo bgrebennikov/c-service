@@ -42,7 +42,7 @@ class CreateOrderUseCase : KoinComponent {
                 val messageBody = buildString {
                     appendLine("Новая заявка!\n\nТелефон: $phone")
                     if (fromLanding != null) appendLine(
-                        "Отправлено со страницы: https://мастер-крылов.рф/${fromLanding}"
+                        "Отправлено с сайта: $fromLanding"
                     )
                     if (reason != null) {
                         appendLine("Причина обращения: $reason")
@@ -50,8 +50,8 @@ class CreateOrderUseCase : KoinComponent {
                 }
 
                 try {
-                    telegramService.sendNotification(messageBody, 1979249233)
-                    telegramService.sendNotification(messageBody, 868633316)
+                    telegramService.sendNotification(messageBody, 1979249233, phone)
+                    telegramService.sendNotification(messageBody, 868633316, phone)
                 }
                 catch (e: Exception){
 
