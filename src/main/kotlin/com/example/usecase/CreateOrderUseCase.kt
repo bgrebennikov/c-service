@@ -42,7 +42,7 @@ class CreateOrderUseCase : KoinComponent {
                 val messageBody = buildString {
                     appendLine("Новая заявка!\n\nТелефон: $phone")
                     if (fromLanding != null) appendLine(
-                        "Отправлено с сайта: $fromLanding"
+                        "Отправлено с сайта: https://$fromLanding"
                     )
                     if (reason != null) {
                         appendLine("Причина обращения: $reason")

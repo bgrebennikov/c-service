@@ -83,7 +83,7 @@ class BotService : KoinComponent {
             bot.sendMessage(ChatId(toUser), text,
                 replyMarkup = inlineKeyboard {
                     row {
-                        urlButton("Позвонить 💁", "http://call.xn----7sbhk0agcvocgm6j.xn--p1ai/$phone")
+                        urlButton("Позвонить 💁", "https://call.xn----7sbhk0agcvocgm6j.xn--p1ai/$phone")
                     }
                 }
             )
