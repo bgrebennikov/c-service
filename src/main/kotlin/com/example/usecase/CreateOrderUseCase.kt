@@ -8,6 +8,7 @@ import com.example.services.telegram.BotService
 import dev.inmo.tgbotapi.bot.exceptions.CommonRequestException
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
+import java.net.IDN
 
 class CreateOrderUseCase : KoinComponent {
 
