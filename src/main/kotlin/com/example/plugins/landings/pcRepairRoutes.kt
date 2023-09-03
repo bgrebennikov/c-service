@@ -20,7 +20,7 @@ fun Route.pcRepairRoutes(){
         }
         val phoneFormatted = phoneMask.valueToString(contactsValues?.phone)
 
-        val utmCity: Map<String, String> = when(call.parameters["utm-city"]){
+        val utmCity: Map<String, String> = when(call.parameters["utm_city"]){
             "KIN" -> mapOf(
                 "name" to "Кинель",
                 "name_prep" to "Кинеле",
