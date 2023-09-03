@@ -5,8 +5,11 @@ import com.mongodb.client.model.UpdateOptions
 import org.bson.types.ObjectId
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
-import org.litote.kmongo.*
 import org.litote.kmongo.coroutine.CoroutineDatabase
+import org.litote.kmongo.eq
+import org.litote.kmongo.set
+import org.litote.kmongo.setTo
+import org.litote.kmongo.upsert
 import kotlin.reflect.KProperty1
 
 class ContactDataSourceImpl : ContactDataSource, KoinComponent {
