@@ -34,8 +34,8 @@
                     ноутбуки и моноблоки с 2013 года.</p>
             </div>
             <div class="adr">
-                <img src="static/img/adr.jpg" alt="">
-                <p>г. Самара</p>
+                <img src="${city.city_icon}" alt="">
+                <p>г. ${city.name}</p>
             </div>
             <div class="tel">
                 <span>
@@ -70,7 +70,7 @@
                     <img src="static/img/master-sq.png" alt="">
                 </div>
                 <h1>Грамотный ремонт компьютеров <br>
-                    <span>на дому в Самаре и области от 190 руб</span></h1>
+                    <span>на дому ${city.title} от 190 руб</span></h1>
                 <div class="main_plus">
                     <div class="plus_1">
                         <div class="border">
@@ -546,7 +546,7 @@
         </p>
         <br>
         <h2>
-            Без выходных – 24/7 – в любом районе Самары
+            Без выходных – 24/7 – в любом районе ${city.name_accus}
         </h2>
     </div>
     <div class="maps_block">
