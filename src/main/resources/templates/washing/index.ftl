@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--metatextblock--><title>Ремонт стиральных машин в г. Самара</title>
     <meta property="og:url" content="https://мастер-аксенов.рф"/>
-    <meta property="og:title" content="Ремонт стиральных машин в г. Самара"/>
+    <meta property="og:title" content="Ремонт стиральных машин в г. ${city.name}"/>
     <meta property="og:description" content=""/>
     <meta property="og:type" content="website"/>
     <meta name="format-detection" content="telephone=no"/>
@@ -2337,7 +2337,7 @@
                      data-field-left-res-320-value="10" data-field-width-res-320-value="255"
                      data-field-top-res-480-value="136" data-field-left-res-480-value="22"
                 >
-                    <div class='tn-atom' field='tn_text_1670227016954'>Ремонт стиральных машин в Самаре</div>
+                    <div class='tn-atom' field='tn_text_1670227016954'>Ремонт стиральных машин в ${city.name_prep}</div>
                 </div>
                 <div class='t396__elem tn-elem tn-elem__5821718001670227016956' data-elem-id='1670227016956'
                      data-elem-type='text' data-field-top-value="289" data-field-left-value="22"
@@ -11413,7 +11413,7 @@
                      data-field-height-res-960-value="251" data-field-width-res-960-value="300"
                 >
                     <div class='tn-atom t-bgimg'
-                         data-original="https://static.tildacdn.com/tild3764-3635-4339-b761-373063323235/photo.png"
+                         data-original="${city.map_image_url}"
                          style="background-image:url('https://static.tildacdn.com/tild3764-3635-4339-b761-373063323235/-/resize/20x/photo.png');"
                     ></div>
                 </div>

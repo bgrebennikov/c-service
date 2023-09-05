@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/font/stylesheet.css">
-    <title>Ремонт компьютеров в Самаре | Мастер крылов</title>
+    <title>Ремонт компьютеров в ${city.name_prep} | Мастер крылов</title>
     <meta name="description"
           content="Ремонтирую компьютеры, ноутбуки, моноблоки и другую технику с 2013 года. Выезд на дом, бесплатная диагностика, гарантия до 3х лет! Тел: +7(987)900-99-75 (Георгий)">
     <meta name="keywords"
