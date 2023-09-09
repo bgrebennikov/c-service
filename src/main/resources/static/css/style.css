@@ -91,19 +91,6 @@
         margin-right: 10px;
     }
 
-    /* Contacts Block */
-    .contacts_block{
-        display: flex;
-        align-content: space-between;
-        padding: 100px;
-    }
-    .contacts_content{
-        flex: 1;
-    }
-    .maps_block{
-        flex: 1;
-    }
-
     .tel {
         text-align: right;
     }
@@ -984,20 +971,6 @@
         background-size: contain;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-
-    /* Contacts Block */
-    .contacts_block{
-        display: flex;
-        align-content: space-between;
-        padding: 100px;
-    }
-    .contacts_content{
-        flex: 1;
-    }
-    .maps_block{
-        flex: 1;
-    }
-
     .top_main {
         display: flex;
         padding: 30px 0;
@@ -1870,23 +1843,6 @@
         position: relative;.
     -webkit-overflow-scrolling: touch;
     }
-
-    /* Contacts Block */
-    .contacts_block{
-        display: flex;
-        align-content: space-between;
-        padding: 100px;
-        flex-wrap: wrap;
-    }
-    .contacts_content{
-        width: 100%;
-    }
-    .maps_block{
-        width: 100%;
-        padding-top: 65px;
-    }
-
-
     .container {
         max-width: 600px;
         min-width: 300px;

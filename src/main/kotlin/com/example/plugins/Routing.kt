@@ -2,9 +2,9 @@ package com.example.plugins
 
 import com.example.routes.callRedirectRoute
 import com.example.routes.feedback
-import com.example.routes.sendFormRoute
+import com.example.routes.coolerSendFormRoute
+import com.example.routes.washingSendFormRoute
 import io.ktor.server.routing.*
-import io.ktor.server.response.*
 import io.ktor.server.http.content.*
 import io.ktor.server.application.*
 
@@ -19,8 +19,12 @@ fun Application.configureRouting() {
             feedback()
         }
 
+        route("/coolers-sendForm"){
+            coolerSendFormRoute()
+        }
+
         route("/sendForm"){
-            sendFormRoute()
+            washingSendFormRoute()
         }
 
         host("call.xn----7sbhk0agcvocgm6j.xn--p1ai"){

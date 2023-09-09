@@ -5,7 +5,6 @@ import com.example.data.responses.ErrorResponse
 import com.example.routes.SuccessResult
 import com.example.services.orders.OrderService
 import com.example.services.telegram.BotService
-import dev.inmo.tgbotapi.bot.exceptions.CommonRequestException
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 import java.net.IDN
@@ -16,14 +15,17 @@ class CreateOrderUseCase : KoinComponent {
     private val telegramService: BotService by inject()
 
     private val err = ErrorResponse(
-        mapOf(
+        errors = mapOf(
             "phone" to "Неверный формат номера телефона"
         )
     )
 
     suspend operator fun invoke(
         p: String?, fromLanding: String? = null,
-        reason: String? = null
+        reason: String? = null,
+        customer_name: String? = null,
+        tag: String? = null,
+        city: String? = null
     ): Any {
         try {
             p ?: return err
@@ -41,7 +43,17 @@ class CreateOrderUseCase : KoinComponent {
             ) {
 
                 val messageBody = buildString {
-                    appendLine("Новая заявка!\n\nТелефон: $phone")
+                    appendLine("Новая заявка!\n")
+                    if (tag != null){
+                        appendLine("[${tag.uppercase()}]\n")
+                    }
+                    if (city != null){
+                        appendLine("Город: $city")
+                    }
+                    if (customer_name != null){
+                        appendLine("Имя клиента: $customer_name")
+                    }
+                    appendLine("Телефон: $phone\n")
                     if (fromLanding != null) appendLine(
                         "Отправлено с сайта: https://${IDN.toUnicode(fromLanding)}"
                     )

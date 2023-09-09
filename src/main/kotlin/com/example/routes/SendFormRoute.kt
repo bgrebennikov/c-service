@@ -7,18 +7,29 @@ import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import org.koin.ktor.ext.inject
 
-fun Route.sendFormRoute(){
+data class CoolersOrderRequest(
+    val phone: String,
+    val name : String?,
+    val text: String?,
+    val city: String,
+    val tag: String
+)
+fun Route.coolerSendFormRoute(){
 
     val createOrderUseCase by inject<CreateOrderUseCase>()
 
     post {
 
-        val phone = call.receiveParameters()["Phone"]
+        val params = call.receiveNullable<CoolersOrderRequest>()
 
         call.respond(
             createOrderUseCase.invoke(
-                phone,
-                call.request.host()
+                params?.phone,
+                call.request.host(),
+                params?.text,
+                params?.name,
+                params?.tag,
+                params?.city
             )
         )
     }

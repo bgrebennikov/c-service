@@ -34,10 +34,19 @@ fun Application.configureTemplating() {
 
         host("washrepair.ru"){
             washRepairRoutes()
+
+            route("/coolers"){
+                coolersRepairRoutes()
+            }
         }
 
         host("xn----7sbbimc8alpkqkfi.xn--p1ai"){
             washRepairRoutes()
+
+            route("/coolers"){
+                coolersRepairRoutes()
+            }
+
         }
 
 
