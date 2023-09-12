@@ -281,7 +281,7 @@
             <div class="price-have wow fadeInUp">Цена</div>
             <!-- Price-head end -->
             <!-- Price-item start -->
-            <div class="price-item wow fadeInUp"><span class="price-term">Вызов мастера по ${city.name_prep}</span><span class="price-faith"></span></div>
+            <div class="price-item wow fadeInUp"><span class="price-term">Вызов мастера</span><span class="price-faith"></span></div>
             <div class="wow fadeInUp">Бесплатно</div>
             <!-- Price-item end -->
             <!-- Price-item start -->
