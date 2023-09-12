@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
-    <title>Ремонт холодильников на дому - Недорого!</title>
+    <title>Ремонт холодильников в Самаре - Недорого!</title>
     <meta name="description" content="Быстрый и недорогой ремонт холодильников на дому. Бесплатная диагностика. Вежливый и аккуратный мастер приедет уже через 30 мин.!" />
-    <meta name="keywords" content="" />
+    <meta name="keywords" content="ремонт холодильников, ремонт бытовой техники, самара, ремонт морозильников" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
     <link rel="manifest" href="icons/site.html">
@@ -348,16 +348,16 @@
             <div class="wow fadeInUp"><img src="/static/img/coolers/6.png" alt=""></div>
             <!-- Brends-item end -->
             <!-- Brends-item start -->
-            <div class="wow fadeInUp"><img src="/static/img/coolers/2.png" alt=""></div>
+            <div class="wow fadeInUp"><img src="/static/img/coolers/brand_2.png" alt=""></div>
             <!-- Brends-item end -->
             <!-- Brends-item start -->
             <div class="wow fadeInUp"><img src="/static/img/coolers/14.png" alt=""></div>
             <!-- Brends-item end -->
             <!-- Brends-item start -->
-            <div class="wow fadeInUp"><img src="/static/img/coolers/3.png" alt=""></div>
+            <div class="wow fadeInUp"><img src="/static/img/coolers/brand_3.png" alt=""></div>
             <!-- Brends-item end -->
             <!-- Brends-item start -->
-            <div class="wow fadeInUp"><img src="/static/img/coolers/4.png" alt=""></div>
+            <div class="wow fadeInUp"><img src="/static/img/coolers/brand_4.png" alt=""></div>
             <!-- Brends-item end -->
             <!-- Brends-item start -->
             <div class="wow fadeInUp"><img src="/static/img/coolers/15.png" alt=""></div>
@@ -533,28 +533,28 @@
         <div class="why">
             <!-- Why-item start -->
             <div class="why-paper wow fadeInUp">
-                <div class="why-talk"><img class="why-utter" src="/static/img/coolers/1.png" alt=""></div>
+                <div class="why-talk"><img class="why-utter" src="/static/img/coolers/why_1.png" alt=""></div>
                 <h4 class="why-guide">Быстро</h4>
                 <p class="why-term">Скоростные темпы ликвидации неисправности – то, чего мне удалось достичь благодаря оперативному выезду на дом, наличию необходимых инструментов и комплектующих материалов.</p>
             </div>
             <!-- Why-item end -->
             <!-- Why-item start -->
             <div class="why-paper wow fadeInUp">
-                <div class="why-talk"><img class="why-utter" src="/static/img/coolers/2.png" alt=""></div>
+                <div class="why-talk"><img class="why-utter" src="/static/img/coolers/why_2.png" alt=""></div>
                 <h4 class="why-guide">Бюджетно</h4>
                 <p class="why-term">Ремонт холодильников недорого – моя миссия. Я устанавливаю адекватные расценки за счет того, что приобретаю расходные материалы у производителей техники, при этом не сотрудничаю с посредниками.</p>
             </div>
             <!-- Why-item end -->
             <!-- Why-item start -->
             <div class="why-paper wow fadeInUp">
-                <div class="why-talk"><img class="why-utter" src="/static/img/coolers/3.png" alt=""></div>
+                <div class="why-talk"><img class="why-utter" src="/static/img/coolers/why_3.png" alt=""></div>
                 <h4 class="why-guide">Личная гарантия</h4>
                 <p class="why-term">На все виды работ вы обязательно получите личную гарантию, если обратились ко мне. Я - Самозанятый, работаю оффициально, поэтому я не занимаюсь халтурой, не оставляю клиента в беде с неисправностями техники.</p>
             </div>
             <!-- Why-item end -->
             <!-- Why-item start -->
             <div class="why-paper wow fadeInUp">
-                <div class="why-talk"><img class="why-utter" src="/static/img/coolers/4.png" alt=""></div>
+                <div class="why-talk"><img class="why-utter" src="/static/img/coolers/why_4.png" alt=""></div>
                 <h4 class="why-guide">На дому</h4>
                 <p class="why-term">Вы вызываете специалиста – я приезжаю для проведения ремонта в сжатые сроки. Это в значительной степени облегчает жизнь клиентам, экономит их средства, так как теперь нет нужды искать автомобиль с целью транспортировки в сервисный
                     центр.</p>
