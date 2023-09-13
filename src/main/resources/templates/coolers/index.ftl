@@ -554,7 +554,7 @@
             <!-- Why-item end -->
             <!-- Why-item start -->
             <div class="why-paper wow fadeInUp">
-                <div class="why-talk"><img class="why-utter" src="/static/img/coolers/why_4.png" alt=""></div>
+                <div class="why-talk"><img class="why-utter" src="/static/img/coolers/why_5.png" alt=""></div>
                 <h4 class="why-guide">На дому</h4>
                 <p class="why-term">Вы вызываете специалиста – я приезжаю для проведения ремонта в сжатые сроки. Это в значительной степени облегчает жизнь клиентам, экономит их средства, так как теперь нет нужды искать автомобиль с целью транспортировки в сервисный
                     центр.</p>
