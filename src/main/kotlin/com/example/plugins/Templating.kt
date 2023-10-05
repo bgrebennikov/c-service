@@ -1,5 +1,6 @@
 package com.example.plugins
 
+import com.example.plugins.landings.acsenovTvRoutes
 import com.example.plugins.landings.coolersRepairRoutes
 import com.example.plugins.landings.pcRepairRoutes
 import com.example.plugins.landings.washRepairRoutes
@@ -40,6 +41,7 @@ fun Application.configureTemplating() {
             }
         }
 
+        // мастер-аксенов.рф
         host("xn----7sbbimc8alpkqkfi.xn--p1ai"){
             washRepairRoutes()
 
@@ -47,9 +49,17 @@ fun Application.configureTemplating() {
                 coolersRepairRoutes()
             }
 
+            route("/tv"){
+                acsenovTvRoutes()
+            }
+
         }
 
-
+        host("tvmaster.ru"){
+            route("/tv"){
+                acsenovTvRoutes()
+            }
+        }
 
         host("coolersrepair.ru"){
             coolersRepairRoutes()

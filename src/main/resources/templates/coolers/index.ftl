@@ -752,7 +752,7 @@
 <!-- Modal-call start -->
 <div class="modal" id="call">
     <h3 class="modal-title">Перезвонить мне</h3>
-    <form action="/sendForm" method="post"  >
+    <form action="/sendForm" method="post" >
         <input type="hidden" name="city" value="${city.name}">
         <input type="hidden" name="tag" value="холодильники">
         <input type="hidden" name="typ" value="Перезвонить мне" />

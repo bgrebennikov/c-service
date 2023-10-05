@@ -25,7 +25,8 @@ class CreateOrderUseCase : KoinComponent {
         reason: String? = null,
         customer_name: String? = null,
         tag: String? = null,
-        city: String? = null
+        city: String? = null,
+        form_name: String? = null
     ): Any {
         try {
             p ?: return err
@@ -44,14 +45,17 @@ class CreateOrderUseCase : KoinComponent {
 
                 val messageBody = buildString {
                     appendLine("Новая заявка!\n")
-                    if (tag != null){
+                    if (tag != null) {
                         appendLine("[${tag.uppercase()}]\n")
                     }
-                    if (city != null){
+                    if (city != null) {
                         appendLine("Город: $city")
                     }
-                    if (customer_name != null){
+                    if (customer_name != null) {
                         appendLine("Имя клиента: $customer_name")
+                    }
+                    if (form_name != null) {
+                        appendLine("Отправленно с формы: $form_name")
                     }
                     appendLine("Телефон: $phone\n")
                     if (fromLanding != null) appendLine(
@@ -65,15 +69,13 @@ class CreateOrderUseCase : KoinComponent {
                 try {
                     telegramService.sendNotification(messageBody, 1979249233, phone)
                     telegramService.sendNotification(messageBody, 868633316, phone)
-                }
-                catch (e: Exception){
+                } catch (e: Exception) {
 
                 }
                 return SuccessResult()
             } else err
 
-        }
-        catch (e: Exception) {
+        } catch (e: Exception) {
             e.printStackTrace()
             return err
         }

@@ -12,7 +12,8 @@ data class CoolersOrderRequest(
     val name : String?,
     val text: String?,
     val city: String,
-    val tag: String
+    val tag: String,
+    val form_name: String?
 )
 fun Route.coolerSendFormRoute(){
 
@@ -29,7 +30,8 @@ fun Route.coolerSendFormRoute(){
                 params?.text,
                 params?.name,
                 params?.tag,
-                params?.city
+                params?.city,
+                params?.form_name
             )
         )
     }
