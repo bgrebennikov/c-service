@@ -24,8 +24,12 @@ fun Application.configureTemplating() {
             pcRepairRoutes()
         }
 
+        // мастер-крылов.рф
         host("xn----7sbhk0agcvocgm6j.xn--p1ai"){
             pcRepairRoutes()
+            route("/tv"){
+                krylowTvRoutes()
+            }
         }
 
 
