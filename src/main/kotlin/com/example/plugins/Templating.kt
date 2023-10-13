@@ -1,9 +1,6 @@
 package com.example.plugins
 
-import com.example.plugins.landings.acsenovTvRoutes
-import com.example.plugins.landings.coolersRepairRoutes
-import com.example.plugins.landings.pcRepairRoutes
-import com.example.plugins.landings.washRepairRoutes
+import com.example.plugins.landings.*
 import com.example.services.contacts.ContactsService
 import freemarker.cache.ClassTemplateLoader
 import io.ktor.http.*
@@ -57,7 +54,7 @@ fun Application.configureTemplating() {
 
         host("tvmaster.ru"){
             route("/tv"){
-                acsenovTvRoutes()
+                krylowTvRoutes()
             }
         }
 

@@ -550,7 +550,8 @@
         </h2>
     </div>
     <div class="maps_block">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A46e7f4b564cbbebf08ebb19ab893144398b943a0a7349d11697c3d36b80dd260&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A46e7f4b564cbbebf08ebb19ab893144398b943a0a7349d11697c3d36b80dd260&amp;source=constructor"
+                width="100%" height="400" frameborder="0"></iframe>
     </div>
 </section>
 <footer>
@@ -694,7 +695,7 @@
 </script>
 
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('.multiple-items').slick({
             infinite: true,
             slidesToShow: 2.9,
@@ -766,7 +767,16 @@
     });
 </script>
 <script type="text/javascript">
-    function _0x22c3(_0x164085,_0x3c68fb){const _0x50ce02=_0x50ce();return _0x22c3=function(_0x22c3b7,_0x2ae7cc){_0x22c3b7=_0x22c3b7-0x124;let _0x1907aa=_0x50ce02[_0x22c3b7];return _0x1907aa;},_0x22c3(_0x164085,_0x3c68fb);}const _0xf590ed=_0x22c3;function _0x50ce(){const _0xa08191=['5265638HxDwsC','3671304PUEHYp','isFirtsTime','904900AvmMPn','ready','1029058qHBfwm','682Tdksdv','48OPISRf','reachGoal','16QCfpCe','201830NByofd','3cCYlTo','548227jfCfmC','391185WEKpsj'];_0x50ce=function(){return _0xa08191;};return _0x50ce();}(function(_0x19ca36,_0x55f3ab){const _0x58c9ec=_0x22c3,_0x4b6049=_0x19ca36();while(!![]){try{const _0x335e7a=parseInt(_0x58c9ec(0x12f))/0x1+-parseInt(_0x58c9ec(0x128))/0x2*(parseInt(_0x58c9ec(0x12e))/0x3)+-parseInt(_0x58c9ec(0x12c))/0x4*(-parseInt(_0x58c9ec(0x126))/0x5)+-parseInt(_0x58c9ec(0x124))/0x6+-parseInt(_0x58c9ec(0x131))/0x7+parseInt(_0x58c9ec(0x12a))/0x8*(-parseInt(_0x58c9ec(0x130))/0x9)+parseInt(_0x58c9ec(0x12d))/0xa*(parseInt(_0x58c9ec(0x129))/0xb);if(_0x335e7a===_0x55f3ab)break;else _0x4b6049['push'](_0x4b6049['shift']());}catch(_0x41108a){_0x4b6049['push'](_0x4b6049['shift']());}}}(_0x50ce,0x5dc38),$(document)[_0xf590ed(0x127)](function(){const _0x2635d3=_0xf590ed;let _0x14e41d=localStorage[_0x2635d3(0x125)];_0x14e41d===undefined&&setTimeout(function(){const _0x2c50e3=_0x2635d3;ym(0x59cb250,_0x2c50e3(0x12b),'time_visit_one_min'),localStorage['isFirtsTime']='NO';},0xea60);}));
+
+    $(document).ready(function () {
+        let isFirstTime = localStorage.isFirtsTime;
+        if (isFirstTime === undefined){
+            setTimeout(function (){
+                ym(94155344,'reachGoal','time_visit_one_min')
+                localStorage.isFirtsTime = "NO"
+            }, 60000 * 5)
+        }
+    })
 </script>
 <noscript>
     <div><img src="https://mc.yandex.ru/watch/94155344" style="position:absolute; left:-9999px;" alt=""/></div>
