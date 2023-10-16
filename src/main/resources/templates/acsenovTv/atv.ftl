@@ -10,15 +10,11 @@
     <link rel="stylesheet" href="/static/css/jquery.fancybox.css" >
     <title>Ремонт Телевизоров в Самаре недорого на дому</title>
     <meta name="description" content="Ремонт ЖК Телевизоров в Самаре и области на дому по самым низким ценам в городе! ">
+
+    <script type="text/javascript"> (function ab(){ var request = new XMLHttpRequest(); request.open('GET', "https://scripts.botfaqtor.ru/one/54150", false); request.send(); if(request.status == 200) eval(request.responseText); })(); </script>
+
 </head>
 <body>
-<script async type="text/javascript">
-    (function ct_load_script() {
-        var ct = document.createElement('script'); ct.type = 'text/javascript'; ct.async=true; ct.rel="preload";
-        ct.src = document.location.protocol+'//cc.calltracking.ru/phone.64571.10310.async.js?nc='+Math.floor(new Date().getTime()/300000);
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct, s);
-    })();
-</script>
 
 <div type="button" class="callback-bt-tel mob_only">
     <a href="tel:+79277842263">

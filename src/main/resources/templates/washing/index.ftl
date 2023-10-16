@@ -38,6 +38,8 @@
           type="text/css"/>
     <script type="text/javascript" src="https://static.tildacdn.com/js/tilda-forms-custommask-1.0.min.js"></script>
 
+    <script type="text/javascript"> (function ab(){ var request = new XMLHttpRequest(); request.open('GET', "https://scripts.botfaqtor.ru/one/54150", false); request.send(); if(request.status == 200) eval(request.responseText); })(); </script>
+
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};

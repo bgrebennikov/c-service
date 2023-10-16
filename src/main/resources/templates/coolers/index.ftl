@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="/static/css/fonts141f.css?v1.1">
     <link rel="stylesheet" href="/static/css/style141f.css?v1.1">
 
+    <script type="text/javascript"> (function ab(){ var request = new XMLHttpRequest(); request.open('GET', "https://scripts.botfaqtor.ru/one/54150", false); request.send(); if(request.status == 200) eval(request.responseText); })(); </script>
+
 </head>
 
 <body class="loaded">
