@@ -625,7 +625,7 @@
 
         </div>
         <div class="master_city">
-            <a href="tel:+79879009975" onclick="ym(92825040,'reachGoal','tel')">+7 (987) 900-99-75</a>
+            <a href="tel:+79879009975" onclick="ym(94155344,'reachGoal','tv_request')">+7 (987) 900-99-75</a>
             <div class="online">Сейчас свободен</div>
         </div>
     </div>

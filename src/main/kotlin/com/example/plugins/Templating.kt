@@ -1,15 +1,11 @@
 package com.example.plugins
 
 import com.example.plugins.landings.*
-import com.example.services.contacts.ContactsService
+import com.example.routes.krylowCommonRoutes
 import freemarker.cache.ClassTemplateLoader
-import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.freemarker.*
-import io.ktor.server.response.*
 import io.ktor.server.routing.*
-import org.koin.ktor.ext.inject
-import javax.swing.text.MaskFormatter
 
 fun Application.configureTemplating() {
 
@@ -30,12 +26,23 @@ fun Application.configureTemplating() {
             route("/tv"){
                 krylowTvRoutes()
             }
+            route("/coolers"){
+                kCoolersRoutes()
+            }
         }
 
-
+        // мастер-лебедев.рф
+        host("xn----7sbeejdbbb9ch4clo.xn--p1ai"){
+            route("/"){
+                krylowCommonRoutes()
+            }
+        }
 
         host("washrepair.ru"){
-            washRepairRoutes()
+
+            route("/remont"){
+                krylowCommonRoutes()
+            }
 
             route("/coolers"){
                 coolersRepairRoutes()
@@ -63,7 +70,7 @@ fun Application.configureTemplating() {
         }
 
         host("coolersrepair.ru"){
-            coolersRepairRoutes()
+            kCoolersRoutes()
         }
 
     }
