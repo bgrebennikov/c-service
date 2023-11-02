@@ -4,6 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--metatextblock--><title>Ремонт стиральных машин в г. Самара</title>
+    <meta name="yandex-verification" content="b96e19eeaa2b168a" />
     <meta property="og:url" content="https://мастер-аксенов.рф"/>
     <meta property="og:title" content="Ремонт стиральных машин в г. ${city.name}"/>
     <meta property="og:description" content=""/>
@@ -819,7 +820,7 @@
                      data-field-left-res-640-value="233" data-field-top-res-960-value="29"
                      data-field-left-res-960-value="776"
                 >
-                    <div class='tn-atom'><a href="tel:+79277842263" style="color: inherit">+7 (927) 784-22-63</a></div>
+                    <div class='tn-atom'><a href="tel:+79874363073" style="color: inherit">+7 (987) 436-30-73</a></div>
                 </div>
                 <div class='t396__elem tn-elem tn-elem__5821717971670227016932' data-elem-id='1670227016932'
                      data-elem-type='shape' data-field-top-value="78" data-field-left-value="20"
@@ -11441,7 +11442,7 @@
                      data-field-left-res-640-value="10" data-field-top-res-960-value="225"
                      data-field-left-res-960-value="10"
                 >
-                    <div class='tn-atom'><a href="tel:+79277842263" style="color: inherit">+7 (927) 784-22-63</a></div>
+                    <div class='tn-atom'><a href="tel:+79874363073" style="color: inherit">+7 (987) 436-30-73</a></div>
                 </div>
                 <div class='t396__elem tn-elem tn-elem__5821718141670325880657' data-elem-id='1670325880657'
                      data-elem-type='text' data-field-top-value="403" data-field-left-value="20"

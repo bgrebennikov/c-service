@@ -55,6 +55,9 @@ function feedback(vars) {
                     $.arcticmodal('close');
                     $('#responseMessage .modal-content').removeClass('error').html(val);
                 });
+
+                ym(94751823,'reachGoal','rem_tv')
+
             }else{
                 $.each(answer.errors, function(k,val) {
                     $.jGrowl(val, {theme: 'error', header: 'Ошибка!', life: 3000 });

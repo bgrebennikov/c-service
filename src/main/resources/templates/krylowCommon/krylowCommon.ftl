@@ -1142,7 +1142,7 @@
                 <div class="t450__top">
                     <div class="t450__logowrapper"><a href="/"
                                                       style=""><img class="t450__logoimg"
-                                                                    src="https://static.tildacdn.com/tild3764-3562-4732-a132-636330616135/aejsdrcx-PhotoRoompn.png"
+                                                                    src="/static/kCommon/img/header__logo.svg"
                                                                     imgfield="img"
                                                                     style="max-width: 700px;" alt=""></a></div>
                     <nav class="t450__menu"

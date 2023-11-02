@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="/static/acsenovtv/css/stylesheet.css">
     <link rel="shortcut icon" href="/static/acsenovtv/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/static/css/jquery.fancybox.css" >
-    <title>Ремонт Телевизоров в Самаре недорого на дому</title>
-    <meta name="description" content="Ремонт ЖК Телевизоров в Самаре и области на дому по самым низким ценам в городе! ">
+    <title>Ремонт Телевизоров в ${city.name_prep} недорого на дому</title>
+    <meta name="description" content="Ремонт ЖК Телевизоров в ${city.name_prep} и области на дому по самым низким ценам в городе! ">
 
     <script type="text/javascript"> (function ab(){ var request = new XMLHttpRequest(); request.open('GET', "https://scripts.botfaqtor.ru/one/54150", false); request.send(); if(request.status == 200) eval(request.responseText); })(); </script>
 
@@ -17,7 +17,7 @@
 <body>
 
 <div type="button" class="callback-bt-tel mob_only">
-    <a href="tel:+79277842263">
+    <a href="tel:+79874363073">
         <div class="text-call">
             <i class="fa fa-phone"><img style="width: 23px;" src="/static/acsenovtv/img/call.svg" alt=""></i>
         </div>
@@ -34,7 +34,7 @@
             <div class="menu">
                 <div class="logo">
                     <img src="/static/acsenovtv/img/bg1/logo.png" alt="">
-                    <b>Частный ТВ мастер <p>в Самаре и области</p></b>
+                    <b>Частный ТВ мастер <p>в ${city.name_prep} и Самарской области</p></b>
 
 
                 </div>
@@ -44,7 +44,7 @@
                         в мессенджерах</p>
 
                     <div class="items">
-                        <a target="_blank" href="https://wa.me/79277842263">
+                        <a target="_blank" href="https://wa.me/79874363073">
                             <img src="/static/acsenovtv/img/bg1/whatsapp.svg" alt="">
                         </a>
                         <a target="_blank" href="https://t.me/RemSamara63">
@@ -53,18 +53,18 @@
                     </div>
                 </div>
                 <div class="tel">
-                    <a href="tel:+79277842263">+7 (927) 784-22-63</a>
-                    <p>Пн-Вс: с 09:00 до 20:00</p>
+                    <a href="tel:+79874363073">+7 (987) 436-30-73</a>
+                    <p>Пн-Вс: с 07:00 до 23:45</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="container main">
         <div class="left">
-            <h1>Ремонт Телевизоров Самара<span>Георгий Аксенов</span></h1>
+            <h1>Ремонт Телевизоров ${city.name}<span>Георгий Аксенов</span></h1>
 
             <div class="h1_dop">
-                <p>Ремонтирую телевизоры любых брендов в Самаре и области уже более 20 лет</p>
+                <p>Ремонтирую телевизоры любых брендов в ${city.name_prep} и области уже более 20 лет</p>
             </div>
 
             <div class="master_main mobile">
@@ -145,7 +145,7 @@
                     </div>
                 </div>
 
-                <h4>Если Вам нужно Отремонтировать телевизор в Самаре <b>помогу решить проблему уже сегодня</b> (свяжусь в течение 10 минут)</h4>
+                <h4>Если Вам нужно Отремонтировать телевизор в ${city.name_prep} <b>помогу решить проблему уже сегодня</b> (свяжусь в течение 10 минут)</h4>
 
 
 
@@ -174,14 +174,14 @@
             <div class="forma_dop">
                 <div class="tel">
                     <p>Звоните:</p>
-                    <a href="tel:+79277842263">+7 (927) 784-22-63</a>
+                    <a href="tel:+79874363073">+7 (987) 436-30-73</a>
                 </div>
                 <hr>
                 <div class="soc">
                     <p>Спрашивайте:</p>
                     <div class="items">
                         <div class="items">
-                            <a target="_blank" href="https://wa.me/79277842263">
+                            <a target="_blank" href="https://wa.me/79874363073">
                                 <img src="/static/acsenovtv/img/bg1/whatsapp.svg" alt="">
                             </a>
                             <a target="_blank" href="https://t.me/RemSamara63">
@@ -237,7 +237,7 @@
                     </button>
                 </div>
 
-                <p>Расскажу <b>о возможных неисправностях и сумме ремонта</b> вашего телевизора в Самаре</p>
+                <p>Расскажу <b>о возможных неисправностях и сумме ремонта</b> вашего телевизора в ${city.name_prep}</p>
             </div>
         </div>
     </div>
@@ -390,16 +390,16 @@
                         <h4><b>Бесплатная консультация</b> и вызов мастера</h4>
 
                         <div class="tel">
-                            <p>Работаем Пн-Вс: с 09:00 до 20:00
+                            <p>Работаем Пн-Вс: с 07:00 до 23:45
                             </p>
-                            <a href="tel:+79277842263">+7 (927) 784-22-63</a>
+                            <a href="tel:+79874363073">+7 (987) 436-30-73</a>
                         </div>
 
                         <div class="soc">
                             <p>Спрашивайте:</p>
                             <div class="items">
                                 <div class="items">
-                                    <a target="_blank" href="https://wa.me/79277842263">
+                                    <a target="_blank" href="https://wa.me/79874363073">
                                         <img src="/static/acsenovtv/img/bg1/whatsapp.svg" alt="">
                                     </a>
                                     <a target="_blank" href="https://t.me/RemSamara63">
@@ -494,7 +494,7 @@
 
 
         <div class="shagi_all">
-            <h3><b>3 шага</b> как заказать ремонт телевизора в Самаре</h3>
+            <h3><b>3 шага</b> как заказать ремонт телевизора в ${city.name_prep}</h3>
 
             <div class="shagi">
 
@@ -505,9 +505,9 @@
                     <h4>Звоните нам</h4>
 
                     <div class="tel">
-                        <p>Работаю Пн-Вс: с 08:00 до 20:00
+                        <p>Работаю Пн-Вс: с 07:00 до 23:45
                         </p>
-                        <a href="tel:+79277842263">+7 (927) 784-22-63</a>
+                        <a href="tel:+79874363073">+7 (987) 436-30-73</a>
                     </div>
 
                     <div class="form">
@@ -537,7 +537,7 @@
                     <h4>Консультация и
                         выезд мастера</h4>
 
-                    <p>Я перезвоню Вам в <b>рабочее время Пн-Вс 7:00-23:00</b> проконсультирую по вопросу ремонта.
+                    <p>Я перезвоню Вам в <b>рабочее время Пн-Вс 7:00-23:45</b> проконсультирую по вопросу ремонта.
                         <span></span>
                         Если я понимаю, что без диагностики не обойтись - <b>согласовываем время и дату выезда</b> на диагностику.</p>
 
@@ -576,18 +576,18 @@
 <section>
     <div class="container footer">
         <div class="contacts">
-            <h3><b>Мастер по ремонту телевизоров в Самаре</b></h3>
+            <h3><b>Мастер по ремонту телевизоров в ${city.name_prep}</b></h3>
 
             <div class="cont">
                 <p>Звоните прямо сейчас:</p>
-                <a href="tel:+79277842263">+7 (927) 784-22-63</a>
+                <a href="tel:+79874363073">+7 (987) 436-30-73</a>
             </div>
 
             <div class=" cont soc">
                 <p>Спрашивайте:</p>
                 <div class="items">
                     <div class="items">
-                        <a target="_blank" href="https://wa.me/79277842263">
+                        <a target="_blank" href="https://wa.me/79874363073">
                             <img src="/static/acsenovtv/img/bg1/whatsapp.svg" alt="">
                         </a>
                         <a target="_blank" href="https://t.me/RemSamara63">
@@ -669,7 +669,7 @@
                     </div>
                 </div>
 
-                <h4>Если у вас сломался телевизор в Самаре, <b>помогу решить проблему уже сегодня</b> (свяжусь в течение 10 минут)</h4>
+                <h4>Если у вас сломался телевизор в ${city.name_prep}, <b>помогу решить проблему уже сегодня</b> (свяжусь в течение 10 минут)</h4>
 
 
 

@@ -29,6 +29,9 @@ fun Application.configureTemplating() {
             route("/coolers"){
                 kCoolersRoutes()
             }
+            route("/washing"){
+                krylowWashingRoutes()
+            }
         }
 
         // мастер-лебедев.рф
@@ -70,7 +73,11 @@ fun Application.configureTemplating() {
         }
 
         host("coolersrepair.ru"){
-            kCoolersRoutes()
+            krylowWashingRoutes()
+        }
+
+        host("192.168.13.210"){
+            krylowWashingRoutes()
         }
 
     }
