@@ -67,8 +67,8 @@ fun Application.configureTemplating() {
         }
 
         host("tvmaster.ru"){
-            route("/tv"){
-                krylowTvRoutes()
+            route("/"){
+                acsenovTvRoutes()
             }
         }
 

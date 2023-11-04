@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="theme-color" content="#121213" />
+    <meta name="theme-color" content="#121213"/>
     <title>My Website</title>
     <link rel="stylesheet" href="/static/kwashing/css/style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
@@ -64,7 +64,9 @@
     </h3>
 
     <form class="calculate__price__form" action="/sendForm">
-        <label for="phone_number_input">Оставьте свой номер телефона, мастер перезвонит и проконсультирует Вас по стоимости ремонта</label><input type="number" name="phone_number" id="phone_number_input" placeholder="Номер телефона">
+        <label for="phone_number_input">Оставьте свой номер телефона, мастер перезвонит и проконсультирует Вас по
+            стоимости ремонта</label><input type="number" name="phone_number" id="phone_number_input"
+                                            placeholder="Номер телефона">
 
         <button class="send_form_btn" type="button">Расчитать стоимость ремонта</button>
     </form>
@@ -228,6 +230,65 @@
 
         </ul>
 
+    </div>
+
+</section>
+
+<section class="section__popular__problems">
+
+    <h2 class="section__title">
+        Популярные поломки стиральных машин
+    </h2>
+
+    <div class="problems__list__wrapper">
+        <ul class="problems__list">
+
+            <li class="problem__item">
+                <div class="problem__item__image">
+                    <img src="/static/kwashing/img/icons/energy.svg" alt="Не включается">
+                </div>
+
+                <div class="problem__body">
+                    <h3 class="problem__title">Не включается</h3>
+                    <p class="problem__description">Ремонт от 680₽</p>
+                </div>
+
+                <div class="problem__item__btns__wrapper">
+                    <button class="problem__item__btn">Вызвать мастера</button>
+                </div>
+            </li>
+
+            <li class="problem__item">
+                <div class="problem__item__image">
+                    <img src="/static/kwashing/img/icons/refresh.svg" alt="Не включается">
+                </div>
+
+                <div class="problem__body">
+                    <h3 class="problem__title">Не крутит</h3>
+                    <p class="problem__description">Ремонт от 550₽</p>
+                </div>
+
+                <div class="problem__item__btns__wrapper">
+                    <button class="problem__item__btn">Вызвать мастера</button>
+                </div>
+            </li>
+
+            <li class="problem__item">
+                <div class="problem__item__image">
+                    <img src="/static/kwashing/img/icons/water.svg" alt="Не включается">
+                </div>
+
+                <div class="problem__body">
+                    <h3 class="problem__title">Не сливает воду</h3>
+                    <p class="problem__description">Ремонт от 720₽</p>
+                </div>
+
+                <div class="problem__item__btns__wrapper">
+                    <button class="problem__item__btn">Вызвать мастера</button>
+                </div>
+            </li>
+
+        </ul>
     </div>
 
 </section>
