@@ -426,14 +426,14 @@
         </div>
 
         <div class="otz">
-            <a data-fancybox="otz" href="/static/acsenovtv/img/otz/1.png"><img data-src="/static/acsenovTv/img/otz/1.png" alt=""></a>
+            <a data-fancybox="otz" href="/static/acsenovtv/img/otz/1.png"><img data-src="/static/acsenovtv/img/otz/1.png" alt=""></a>
 
 
 
-            <a data-fancybox="otz" href="/static/acsenovtv/img/otz/3.png"><img data-src="/static/acsenovTv/img/otz/3.png" alt=""></a>
+            <a data-fancybox="otz" href="/static/acsenovtv/img/otz/3.png"><img data-src="/static/acsenovtv/img/otz/3.png" alt=""></a>
 
-            <a data-fancybox="otz" href="/static/acsenovtv/img/otz/4.png"><img data-src="/static/acsenovTv/img/otz/4.png" alt=""></a>
-            <a data-fancybox="otz" href="/static/acsenovtv/img/otz/2.png"><img data-src="/static/acsenovTv/img/otz/2.png" alt=""></a>
+            <a data-fancybox="otz" href="/static/acsenovtv/img/otz/4.png"><img data-src="/static/acsenovtv/img/otz/4.png" alt=""></a>
+            <a data-fancybox="otz" href="/static/acsenovtv/img/otz/2.png"><img data-src="/static/acsenovtv/img/otz/2.png" alt=""></a>
         </div>
     </div>
 </section>
