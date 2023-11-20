@@ -15,6 +15,8 @@ import dev.inmo.tgbotapi.extensions.utils.types.buttons.inlineKeyboard
 import dev.inmo.tgbotapi.extensions.utils.types.buttons.urlButton
 import dev.inmo.tgbotapi.types.ChatId
 import dev.inmo.tgbotapi.types.IdChatIdentifier
+import dev.inmo.tgbotapi.types.message.abstracts.ContentMessage
+import dev.inmo.tgbotapi.types.message.content.TextContent
 import dev.inmo.tgbotapi.utils.row
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -22,6 +24,7 @@ import kotlinx.coroutines.launch
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 
+// pc_repair_offline
 class BotService : KoinComponent {
 
     private val contactsService: ContactsService by inject()
@@ -70,23 +73,20 @@ class BotService : KoinComponent {
         )
     }
 
-    suspend fun sendNotification(text: String, toUser: Long, phone: String? = null) {
+    suspend fun sendNotification(text: String, toUser: Long, phone: String? = null): ContentMessage<TextContent> {
 
         phone?.let {
 
-            bot.sendMessage(ChatId(toUser), text,
+            return bot.sendMessage(ChatId(toUser), text,
                 replyMarkup = inlineKeyboard {
                     row {
                         urlButton("Позвонить 💁", "https://call.xn----7sbhk0agcvocgm6j.xn--p1ai/$phone")
                     }
                 }
             )
-            return
         }
 
-
-
-        bot.sendTextMessage(ChatId(toUser), text)
+        return bot.sendTextMessage(ChatId(toUser), text)
     }
 
 

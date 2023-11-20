@@ -13,11 +13,22 @@ window.isset = function (v) {
     return true;
 }
 
+
+var clientId = null;
+
+const params = new Proxy(new URLSearchParams(window.location.search), {
+    get: (searchParams, prop) => searchParams.get(prop),
+});
+
+const campaign = params.utm_campaign;
+
 /*Отправка форм.*/
 
 function feedback(vars) {
     var bt = $(vars.form).find('.feedback');
     var p = new URLSearchParams(vars.data)
+
+    let samara_datetime_utc = new Date().toGMTString("ru-RU", { timeZone: "Europe/Samara" });
 
     $.ajax({
         headers: {
@@ -36,7 +47,11 @@ function feedback(vars) {
                 text: p.get('text'),
                 tag: p.get('tag'),
                 city: p.get('city'),
-                form_name: p.get('what')
+                form_name: p.get('what'),
+
+                clientId: clientId,
+                utm_campaign: campaign,
+                timeUnix: Math.floor(new Date(samara_datetime_utc) / 1000)
             }
         ),
         beforeSend: function() {

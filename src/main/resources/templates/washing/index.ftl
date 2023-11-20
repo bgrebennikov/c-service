@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--metatextblock--><title>Ремонт стиральных машин в г. Самара</title>
-    <meta name="yandex-verification" content="b96e19eeaa2b168a" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--metatextblock--><title>Ремонт стиральных
+        машин в г. Самара</title>
+    <meta name="yandex-verification" content="b96e19eeaa2b168a"/>
     <meta property="og:url" content="https://мастер-аксенов.рф"/>
     <meta property="og:title" content="Ремонт стиральных машин в г. ${city.name}"/>
     <meta property="og:description" content=""/>
@@ -39,27 +40,45 @@
           type="text/css"/>
     <script type="text/javascript" src="https://static.tildacdn.com/js/tilda-forms-custommask-1.0.min.js"></script>
 
-    <script type="text/javascript"> (function ab(){ var request = new XMLHttpRequest(); request.open('GET', "https://scripts.botfaqtor.ru/one/54150", false); request.send(); if(request.status == 200) eval(request.responseText); })(); </script>
 
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();
-            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    <script type="text/javascript">
+
+        var clientId = null;
+
+
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) {
+                    return;
+                }
+            }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
         (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
         ym(94751823, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+
+        ym(94751823, 'getClientID', function (clientID) {
+            clientId = clientID;
         });
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/94751823" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/94751823" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
     <!-- /Yandex.Metrika counter -->
 
     <script type="text/javascript">(function (d) {
+
             if (!d.visibilityState) {
                 var s = d.createElement('script');
                 s.src = 'https://static.tildacdn.com/js/tilda-polyfill-1.0.min.js';
@@ -139,8 +158,8 @@
             onerror="this.loaderr='y';"></script>
     <script src="https://static.tildacdn.com/js/tilda-popup-1.0.min.js" charset="utf-8" async
             onerror="this.loaderr='y';"></script>
-        <script src="/static/js/tilda-forms-1.0.min.js" charset="utf-8" async
-                onerror="this.loaderr='y';"></script>
+    <script src="/static/js/tilda-forms-1.0.min.js" charset="utf-8" async
+            onerror="this.loaderr='y';"></script>
     <script src="https://static.tildacdn.com/js/tilda-slds-1.4.min.js" charset="utf-8" async
             onerror="this.loaderr='y';"></script>
     <script src="https://static.tildacdn.com/js/tilda-zero-gallery-1.0.min.js" charset="utf-8" async
@@ -877,21 +896,21 @@
                         if (!burger) return;
                         var isSecondStyle = burger.classList.contains('t-menuburger_second');
                         if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
-                            burger.addEventListener('mouseenter', function() {
+                            burger.addEventListener('mouseenter', function () {
                                 if (burger.classList.contains('t-menuburger-opened')) return;
                                 burger.classList.remove('t-menuburger-unhovered');
                                 burger.classList.add('t-menuburger-hovered');
                             });
-                            burger.addEventListener('mouseleave', function() {
+                            burger.addEventListener('mouseleave', function () {
                                 if (burger.classList.contains('t-menuburger-opened')) return;
                                 burger.classList.remove('t-menuburger-hovered');
                                 burger.classList.add('t-menuburger-unhovered');
-                                setTimeout(function() {
+                                setTimeout(function () {
                                     burger.classList.remove('t-menuburger-unhovered');
                                 }, 300);
                             });
                         }
-                        burger.addEventListener('click', function() {
+                        burger.addEventListener('click', function () {
                             if (!burger.closest('.tmenu-mobile') &&
                                 !burger.closest('.t450__burger_container') &&
                                 !burger.closest('.t466__container') &&
@@ -917,8 +936,11 @@
                             burger.classList.remove('t-menuburger-opened');
                         });
                     }
-                    t_onReady(function() {
-                        t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('582171798');});
+
+                    t_onReady(function () {
+                        t_onFuncLoad('t_menuburger_init', function () {
+                            t_menuburger_init('582171798');
+                        });
                     });
 
                 </script>
@@ -6849,9 +6871,9 @@
                      data-field-top-res-960-value="55" data-field-left-res-960-value="220"
                 >
                     <div class='tn-atom'>
-<#--                        <img class='tn-atom__img t-img'-->
-<#--                                              data-original='https://static.tildacdn.com/tild3130-3162-4433-b837-643462643230/123.svg'-->
-<#--                                              imgfield='tn_img_1670309680347'>-->
+                        <#--                        <img class='tn-atom__img t-img'-->
+                        <#--                                              data-original='https://static.tildacdn.com/tild3130-3162-4433-b837-643462643230/123.svg'-->
+                        <#--                                              imgfield='tn_img_1670309680347'>-->
                     </div>
                 </div>
                 <div class='t396__elem tn-elem tn-elem__5821718081670309680355' data-elem-id='1670309680355'
@@ -6896,9 +6918,9 @@
                      data-field-top-res-960-value="150" data-field-left-res-960-value="370"
                 >
                     <div class='tn-atom'>
-<#--                        <img class='tn-atom__img t-img'-->
-<#--                                              data-original='https://static.tildacdn.com/tild3265-6163-4562-b434-626436613531/3_20.png'-->
-<#--                                              imgfield='tn_img_1670316083539'>-->
+                        <#--                        <img class='tn-atom__img t-img'-->
+                        <#--                                              data-original='https://static.tildacdn.com/tild3265-6163-4562-b434-626436613531/3_20.png'-->
+                        <#--                                              imgfield='tn_img_1670316083539'>-->
                     </div>
                 </div>
                 <div class='t396__elem tn-elem tn-elem__5821718081670316107392' data-elem-id='1670316107392'
@@ -6925,7 +6947,8 @@
                      data-field-top-res-960-value="200" data-field-left-res-960-value="40"
                      data-field-width-res-960-value="403"
                 >
-                    <div class='tn-atom' field='tn_text_1670316155815'>Хочу поделиться своим опытом обращения к мастеру Георгию. Мастер приехал в удобное для меня время и выполнил ремонт в тот же день. Сделал всё
+                    <div class='tn-atom' field='tn_text_1670316155815'>Хочу поделиться своим опытом обращения к мастеру
+                        Георгию. Мастер приехал в удобное для меня время и выполнил ремонт в тот же день. Сделал всё
                         быстро, запчасти были в наличии, по телефону поинтересовался что именно сломалось и
                         взял необходимые запчасти сразу. Рекомендую всем!
                     </div>
@@ -6942,9 +6965,9 @@
                      data-field-top-res-960-value="156" data-field-left-res-960-value="210"
                 >
                     <div class='tn-atom'>
-<#--                        <img class='tn-atom__img t-img'-->
-<#--                                              data-original='https://static.tildacdn.com/tild3862-3732-4962-b037-396136356330/Group_288.svg'-->
-<#--                                              imgfield='tn_img_1670316248023'>-->
+                        <#--                        <img class='tn-atom__img t-img'-->
+                        <#--                                              data-original='https://static.tildacdn.com/tild3862-3732-4962-b037-396136356330/Group_288.svg'-->
+                        <#--                                              imgfield='tn_img_1670316248023'>-->
                     </div>
                 </div>
                 <div class='t396__elem tn-elem tn-elem__5821718081670316581130' data-elem-id='1670316581130'
@@ -6976,9 +6999,9 @@
                      data-field-width-res-960-value="60"
                 >
                     <div class='tn-atom'>
-<#--                        <img class='tn-atom__img t-img'-->
-<#--                                              data-original='https://static.tildacdn.com/tild3864-6137-4639-b037-663861343561/3_18.png'-->
-<#--                                              imgfield='tn_img_1670316581139'>-->
+                        <#--                        <img class='tn-atom__img t-img'-->
+                        <#--                                              data-original='https://static.tildacdn.com/tild3864-6137-4639-b037-663861343561/3_18.png'-->
+                        <#--                                              imgfield='tn_img_1670316581139'>-->
                     </div>
                 </div>
                 <div class='t396__elem tn-elem tn-elem__5821718081670316581145' data-elem-id='1670316581145'
@@ -7007,7 +7030,8 @@
                 >
                     <div class='tn-atom' field='tn_text_1670316581150'>Хочу поблагодарить за профессионализм. Стиральной
                         машине всего год. При очередном включении машина просто не включалась. В официальном сервисе
-                        предложили отправить на ремонт, но у меня не было времени ждать и я решила обратится к этому мастеру и не прогадала, мастер приехал быстро и проблему удалось устранить на месте.
+                        предложили отправить на ремонт, но у меня не было времени ждать и я решила обратится к этому
+                        мастеру и не прогадала, мастер приехал быстро и проблему удалось устранить на месте.
                     </div>
                 </div>
                 <div class='t396__elem tn-elem tn-elem__5821718081670316581153' data-elem-id='1670316581153'
@@ -7022,9 +7046,9 @@
                      data-field-top-res-960-value="156" data-field-left-res-960-value="690"
                 >
                     <div class='tn-atom'>
-<#--                        <img class='tn-atom__img t-img'-->
-<#--                                              data-original='https://static.tildacdn.com/tild6533-3164-4264-a165-326237653366/Group_288.svg'-->
-<#--                                              imgfield='tn_img_1670316581153'>-->
+                        <#--                        <img class='tn-atom__img t-img'-->
+                        <#--                                              data-original='https://static.tildacdn.com/tild6533-3164-4264-a165-326237653366/Group_288.svg'-->
+                        <#--                                              imgfield='tn_img_1670316581153'>-->
                     </div>
                 </div>
                 <div class='t396__elem tn-elem tn-elem__5821718081670316621078' data-elem-id='1670316621078'
@@ -7055,9 +7079,9 @@
                      data-field-top-res-960-value="400" data-field-left-res-960-value="370"
                 >
                     <div class='tn-atom'>
-<#--                        <img class='tn-atom__img t-img'-->
-<#--                                              data-original='https://static.tildacdn.com/tild3265-6163-4562-b434-626436613531/3_20.png'-->
-<#--                                              imgfield='tn_img_1670316621088'>-->
+                        <#--                        <img class='tn-atom__img t-img'-->
+                        <#--                                              data-original='https://static.tildacdn.com/tild3265-6163-4562-b434-626436613531/3_20.png'-->
+                        <#--                                              imgfield='tn_img_1670316621088'>-->
                     </div>
                 </div>
                 <div class='t396__elem tn-elem tn-elem__5821718081670316621094' data-elem-id='1670316621094'
@@ -7087,7 +7111,8 @@
                     <div class='tn-atom' field='tn_text_1670316621098'>Мастер приехал в оговоренное время, все сделал
                         быстро и качественно. Стиралка работает как часики, довольна очень. Спасибо. Хочу выразить
                         огромную благодарность мастеру Георгию! Очень долго искала сервис, изучала отзывы,
-                        цены, предложения, решила выбрать частного мастера и не прогадала, получилось быстрее и дешевле, рекомендую!
+                        цены, предложения, решила выбрать частного мастера и не прогадала, получилось быстрее и дешевле,
+                        рекомендую!
                     </div>
                 </div>
                 <div class='t396__elem tn-elem tn-elem__5821718081670316621101' data-elem-id='1670316621101'
@@ -7102,9 +7127,9 @@
                      data-field-top-res-960-value="406" data-field-left-res-960-value="210"
                 >
                     <div class='tn-atom'>
-<#--                        <img class='tn-atom__img t-img'-->
-<#--                                              data-original='https://static.tildacdn.com/tild3739-3435-4631-a265-663131623534/Group_288.svg'-->
-<#--                                              imgfield='tn_img_1670316621101'>-->
+                        <#--                        <img class='tn-atom__img t-img'-->
+                        <#--                                              data-original='https://static.tildacdn.com/tild3739-3435-4631-a265-663131623534/Group_288.svg'-->
+                        <#--                                              imgfield='tn_img_1670316621101'>-->
                     </div>
                 </div>
                 <div class='t396__elem tn-elem tn-elem__5821718081670316621106' data-elem-id='1670316621106'
@@ -7135,9 +7160,9 @@
                      data-field-top-res-960-value="400" data-field-left-res-960-value="850"
                 >
                     <div class='tn-atom'>
-<#--                        <img class='tn-atom__img t-img'-->
-<#--                                              data-original='https://static.tildacdn.com/tild6630-3231-4033-b561-653036653864/3_23.png'-->
-<#--                                              imgfield='tn_img_1670316621110'>-->
+                        <#--                        <img class='tn-atom__img t-img'-->
+                        <#--                                              data-original='https://static.tildacdn.com/tild6630-3231-4033-b561-653036653864/3_23.png'-->
+                        <#--                                              imgfield='tn_img_1670316621110'>-->
                     </div>
                 </div>
                 <div class='t396__elem tn-elem tn-elem__5821718081670316621114' data-elem-id='1670316621114'
@@ -7165,7 +7190,8 @@
                      data-field-left-res-960-value="520" data-field-width-res-960-value="403"
                 >
                     <div class='tn-atom' field='tn_text_1670316621117'>Георгий быстро и качественно отремонтировал
-                        стиральную машину. Я очень довольна, что нашла такого мастера. Спасибо большое за оперативность и
+                        стиральную машину. Я очень довольна, что нашла такого мастера. Спасибо большое за оперативность
+                        и
                         качественно выполненную работу. Теперь я буду обращаться только к вам. От всего сердца благодарю
                         мастера за его золотые руки!
                     </div>
@@ -7182,9 +7208,9 @@
                      data-field-top-res-960-value="406" data-field-left-res-960-value="720"
                 >
                     <div class='tn-atom'>
-<#--                        <img class='tn-atom__img t-img'-->
-<#--                                              data-original='https://static.tildacdn.com/tild6262-6634-4030-b464-643662336235/Group_288.svg'-->
-<#--                                              imgfield='tn_img_1670316621119'>-->
+                        <#--                        <img class='tn-atom__img t-img'-->
+                        <#--                                              data-original='https://static.tildacdn.com/tild6262-6634-4030-b464-643662336235/Group_288.svg'-->
+                        <#--                                              imgfield='tn_img_1670316621119'>-->
                     </div>
                 </div>
             </div>
@@ -11937,6 +11963,23 @@
                 </div>
             </div>
         </div>
+
+        <script>
+
+            $(window).on("load", function () {
+
+                    const campaign = params.utm_campaign;
+                    let samara_datetime_utc = new Date().toGMTString("ru-RU", {timeZone: "Europe/Samara"});
+                    let timeUnix = Math.floor(new Date(samara_datetime_utc) / 1000)
+
+                    $("input[name=utm_campaign]:hidden").val(campaign);
+                    $("input[name=clientId]:hidden").val(clientId);
+                    $("input[name=timeUnix]:hidden").val(timeUnix);
+                }
+            );
+
+        </script>
+
         <script>t_onFuncLoad('t396_initialScale', function () {
                 t396_initialScale('590059831');
             });
@@ -11975,9 +12018,15 @@
                         </div>
                         <form
                                 id="form582171815" name='form582171815' role="form" action='' method='POST'
-                              data-formactiontype="2" data-inputbox=".t-input-group"
-                              class="t-form js-form-proccess t-form_inputs-total_1 t-form_bbonly "
-                              data-success-callback="t702_onSuccess">
+                                data-formactiontype="2" data-inputbox=".t-input-group"
+                                class="t-form js-form-proccess t-form_inputs-total_1 t-form_bbonly "
+                                data-success-callback="t702_onSuccess">
+
+                            <input type="hidden" name="utm_campaign" id="utm_campaign" value="">
+                            <input type="hidden" name="clientId" id="clientId" value="">
+                            <input type="hidden" name="timeUnix" id="timeUnix" value="">
+
+
                             <input type="hidden" name="formservices[]"
                                    value="966434df42cfafda5e727ae83f8603ef"
                                    class="js-formaction-services">
@@ -12150,7 +12199,8 @@
                             данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную
                             тайну.<br/>1.2. Настоящая политика Оператора в отношении обработки персональных данных
                             (далее – Политика) применяется ко всей информации, которую Оператор может получить о
-                            посетителях веб-сайта&nbsp;https://мастер-аксенов.рф.<br/>2. Основные понятия, используемые в
+                            посетителях веб-сайта&nbsp;https://мастер-аксенов.рф.<br/>2. Основные понятия, используемые
+                            в
                             Политике<br/>2.1. Автоматизированная обработка персональных данных – обработка персональных
                             данных с помощью средств вычислительной техники.<br/>2.2. Блокирование персональных данных –
                             временное прекращение обработки персональных данных (за исключением случаев, если обработка
@@ -12310,7 +12360,8 @@
                             согласия Пользователей на обработку их персональных данных, на обработку персональных
                             данных, разрешенных для распространения.<br/>8.2. Оператор обрабатывает персональные данные
                             Пользователя только в случае их заполнения и/или отправки Пользователем самостоятельно через
-                            специальные формы, расположенные на сайте&nbsp;https://мастер-аксенов.рф&nbsp;или направленные
+                            специальные формы, расположенные на сайте&nbsp;https://мастер-аксенов.рф&nbsp;или
+                            направленные
                             Оператору посредством электронной почты. Заполняя соответствующие формы и/или отправляя свои
                             персональные данные Оператору, Пользователь выражает свое согласие с данной Политикой.<br/>8.3.
                             Оператор обрабатывает обезличенные данные о Пользователе в случае, если это разрешено в

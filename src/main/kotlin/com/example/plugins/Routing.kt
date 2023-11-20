@@ -12,28 +12,36 @@ fun Application.configureRouting() {
             resources("static")
         }
 
-        route("/feedback/"){
+        route("/feedback/") {
             feedback()
         }
 
-        route("/coolers-sendForm"){
+        route("/coolers-sendForm") {
             coolerSendFormRoute()
         }
 
-        route("/sendForm"){
+        route("/sendForm") {
             washingSendFormRoute()
         }
 
-        route("/coolers/sendForm"){
+        route("/coolers/sendForm") {
             kCoolersSendFormRoutes()
         }
 
-        host("call.xn----7sbhk0agcvocgm6j.xn--p1ai"){
-            route("/"){
+        host("call.xn----7sbhk0agcvocgm6j.xn--p1ai") {
+            route("/") {
                 callRedirectRoute()
             }
         }
 
+        // мастер-лебедев.рф
+        host("xn----7sbeejdbbb9ch4clo.xn--p1ai"){
+            lebedevRoutes()
+        }
+
+        host("localhost") {
+            lebedevRoutes()
+        }
 
 
     }

@@ -26,8 +26,14 @@ class CreateOrderUseCase : KoinComponent {
         customer_name: String? = null,
         tag: String? = null,
         city: String? = null,
-        form_name: String? = null
+        form_name: String? = null,
+        clientID: String? = null,
+        utm_campaign: String? = null,
+        timeMillis: Long? = null
     ): Any {
+
+        val ppcCampaigns = listOf("95845827", "99002741", "97146424", "98999696")
+
         try {
             p ?: return err
             val phone = p.replace("[^0-9]".toRegex(), "").trim()
@@ -36,12 +42,11 @@ class CreateOrderUseCase : KoinComponent {
 
 
             return if (
-//                orderService.createOrder(
-//                    OrderEntity(
-//                        phone = phone
-//                    )
-//                )
-                true
+                orderService.createOrder(
+                    OrderEntity(
+                        phone = phone
+                    )
+                )
             ) {
 
                 val messageBody = buildString {
@@ -65,11 +70,27 @@ class CreateOrderUseCase : KoinComponent {
                     if (reason != null) {
                         appendLine("Причина обращения: $reason")
                     }
+
+                    clientID?.let {
+                        if(ppcCampaigns.contains(utm_campaign)){
+                            appendLine(
+                                "\n!!! Оффлайн Конверсия!!!\nНе забудьте указать эти данные в недельном отчете!" +
+                                        "\n\n" +
+                                        "ClientID: $clientID\n" +
+                                        "CampaignID: $utm_campaign\n" +
+                                        "TimeMillis: $timeMillis"
+                            )
+                        }
+                    }
+
                 }
 
                 try {
                     telegramService.sendNotification(messageBody, 1979249233, phone)
                     telegramService.sendNotification(messageBody, 868633316, phone)
+
+
+
                 } catch (e: Exception) {
 
                 }

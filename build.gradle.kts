@@ -31,6 +31,7 @@ dependencies {
     implementation("io.ktor:ktor-server-cio-jvm:$ktor_version")
     implementation("ch.qos.logback:logback-classic:$logback_version")
     implementation("io.ktor:ktor-server-config-yaml:$ktor_version")
+    implementation("io.ktor:ktor-server-cors:$ktor_version")
 
     implementation ("io.insert-koin:koin-ktor:$koin_ktor")
 
@@ -38,6 +39,7 @@ dependencies {
 
     implementation("org.litote.kmongo:kmongo:4.10.0")
     implementation("org.litote.kmongo:kmongo-coroutine:4.10.0")
+    implementation("io.ktor:ktor-server-cors-jvm:2.3.1")
 
     testImplementation("io.ktor:ktor-server-tests-jvm:$ktor_version")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")

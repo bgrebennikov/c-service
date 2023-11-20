@@ -5,6 +5,16 @@
  * Time: 20:22
  * To change this template use File | Settings | File Templates.
  */
+
+var clientId = null;
+
+const params = new Proxy(new URLSearchParams(window.location.search), {
+    get: (searchParams, prop) => searchParams.get(prop),
+});
+
+const campaign = params.utm_campaign;
+
+
 function inArray(needle, haystack) {
     var length = haystack.length;
     for (var i = 0; i < length; i++) {
@@ -86,6 +96,8 @@ mcf.done(function (conf) {
 
         var p = new URLSearchParams(vars.data)
 
+        let samara_datetime_utc = new Date().toGMTString("ru-RU", { timeZone: "Europe/Samara" });
+
         $.ajax({
             headers: {
                 'Accept': 'application/json',
@@ -99,7 +111,10 @@ mcf.done(function (conf) {
             data : JSON.stringify(
                 {
                     act: vars.act,
-                    phone: p.get('phone')
+                    phone: p.get('phone'),
+                    clientId: clientId,
+                    utm_campaign: campaign,
+                    timeUnix: Math.floor(new Date(samara_datetime_utc) / 1000)
                 }
             ),
             beforeSend: function () {

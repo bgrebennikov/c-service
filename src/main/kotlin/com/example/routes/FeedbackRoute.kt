@@ -11,9 +11,13 @@ import io.ktor.server.routing.*
 import org.koin.ktor.ext.inject
 
 data class ActionRequest(
-    val act : String,
-    val phone: String? = null
+    val act: String,
+    val phone: String? = null,
+    val clientId: String? = null,
+    val utm_campaign: String? = null,
+    val timeUnix : Long? = null
 )
+
 
 data class SuccessResult(
     val ok: Int = 1,
@@ -22,19 +26,29 @@ data class SuccessResult(
     )
 )
 
-fun Route.feedback(){
+fun Route.feedback() {
 
-    val cfgUseCase : GetConfigUseCase by inject()
+    val cfgUseCase: GetConfigUseCase by inject()
 
     post {
-        val params : ActionRequest = call.receive()
-        when(params.act){
-            "cfg" ->{
+        val params: ActionRequest = call.receive()
+        when (params.act) {
+            "cfg" -> {
                 call.respond(cfgUseCase.invoke())
             }
+
             "form_zayavka" -> {
-                call.respond(CreateOrderUseCase().invoke(params.phone, call.request.host()))
+                call.respond(
+                    CreateOrderUseCase().invoke(
+                        p = params.phone,
+                        fromLanding = call.request.host(),
+                        clientID = params.clientId,
+                        utm_campaign = params.utm_campaign,
+                        timeMillis= params.timeUnix
+                    )
+                )
             }
+
             else -> call.respond(HttpStatusCode.BadRequest)
         }
     }

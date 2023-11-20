@@ -854,6 +854,11 @@
         accurateTrackBounce:true,
         webvisor:true
     });
+
+    ym(94751823, 'getClientID', function (clientID) {
+        clientId =  clientID;
+    });
+
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/94751823" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->

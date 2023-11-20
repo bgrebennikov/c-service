@@ -80,6 +80,10 @@ fun Application.configureTemplating() {
             krylowWashingRoutes()
         }
 
+        host("127.0.0.1"){
+            kAppleRoutes()
+        }
+
     }
 }
 

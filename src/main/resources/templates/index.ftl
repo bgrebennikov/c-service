@@ -765,14 +765,19 @@
         accurateTrackBounce: true,
         webvisor: true
     });
+
+    ym(94155344, 'getClientID', function (clientID) {
+        clientId =  clientID;
+    });
+
 </script>
 <script type="text/javascript">
 
     $(document).ready(function () {
         let isFirstTime = localStorage.isFirtsTime;
-        if (isFirstTime === undefined){
-            setTimeout(function (){
-                ym(94155344,'reachGoal','time_visit_one_min')
+        if (isFirstTime === undefined) {
+            setTimeout(function () {
+                ym(94155344, 'reachGoal', 'time_visit_one_min')
                 localStorage.isFirtsTime = "NO"
             }, 60000 * 5)
         }

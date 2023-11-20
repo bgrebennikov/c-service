@@ -1,19 +1,33 @@
+
+
+const params = new Proxy(new URLSearchParams(window.location.search), {
+    get: (searchParams, prop) => searchParams.get(prop),
+});
+
+const campaign = params.utm_campaign;
+
 $(window).on("load", function () {
+
 
     let forms_selector = $("form");
 
     let forms = forms_selector.context.forms;
 
     for (var i = 0; i < forms.length; i++) {
-        $(forms[i]).on("submit", function (e) {
+        $(forms[i]).on("t-submit", function (e) {
 
             $(`#${e.target.id} :input`).each(function () {
                 console.log(this.name)
                 console.log($(this).val())
 
+                let samara_datetime_utc = new Date().toGMTString("ru-RU", { timeZone: "Europe/Samara" });
+
                 if (this.name === "Phone") {
                     sendForm({
-                        "phone": $(this).val()
+                        Phone: $(this).val(),
+                        clientId: clientId,
+                        utm_campaign: campaign,
+                        timeUnix: Math.floor(new Date(samara_datetime_utc) / 1000)
                     })
                 }
 
