@@ -35,11 +35,11 @@ fun Application.configureTemplating() {
         }
 
         // мастер-лебедев.рф
-        host("xn----7sbeejdbbb9ch4clo.xn--p1ai"){
-            route("/"){
-                krylowCommonRoutes()
-            }
-        }
+//        host("xn----7sbeejdbbb9ch4clo.xn--p1ai"){
+//            route("/"){
+//                krylowCommonRoutes()
+//            }
+//        }
 
         host("washrepair.ru"){
 
