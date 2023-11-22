@@ -9,26 +9,25 @@ import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import org.koin.ktor.ext.inject
 
-fun Route.lebedevRoutes(){
+fun Route.lebedevRoutes() {
 
-    route("/"){
-        singlePageApplication {
-            react("/root/c-service/allfix-frontend")
-        }
+    singlePageApplication {
+        react("allfix-frontend")
     }
 
-    route("/feedback"){
+
+    route("/feedback") {
         lebedevFeedback()
     }
 }
 
 
-private fun Route.lebedevFeedback(){
+private fun Route.lebedevFeedback() {
 
-    val createOrderUseCase : CreateOrderUseCase by inject()
+    val createOrderUseCase: CreateOrderUseCase by inject()
 
     post {
-        val form : LebedevFormRequest = call.receive()
+        val form: LebedevFormRequest = call.receive()
 
         call.respond(
             createOrderUseCase.invoke(

@@ -18,6 +18,17 @@ application {
     applicationDefaultJvmArgs = listOf("-Dio.ktor.development=$isDevelopment")
 }
 
+jib {
+    extraDirectories {
+        paths {
+            path {
+                setFrom("allfix-frontend")
+                into = "${jib.container.appRoot}/allfix-frontend"
+            }
+        }
+    }
+}
+
 repositories {
     mavenCentral()
 }
