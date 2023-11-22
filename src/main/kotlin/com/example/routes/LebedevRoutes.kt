@@ -13,7 +13,7 @@ fun Route.lebedevRoutes(){
 
     route("/"){
         singlePageApplication {
-            react("allfix-frontend")
+            react("/root/c-service/allfix-frontend")
         }
     }
 
