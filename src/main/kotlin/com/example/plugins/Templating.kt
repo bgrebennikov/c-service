@@ -2,6 +2,7 @@ package com.example.plugins
 
 import com.example.plugins.landings.*
 import com.example.routes.krylowCommonRoutes
+import com.example.routes.lebedevRoutes
 import freemarker.cache.ClassTemplateLoader
 import io.ktor.server.application.*
 import io.ktor.server.freemarker.*
@@ -81,7 +82,7 @@ fun Application.configureTemplating() {
         }
 
         host("127.0.0.1"){
-            kAppleRoutes()
+            lebedevRoutes()
         }
 
     }
