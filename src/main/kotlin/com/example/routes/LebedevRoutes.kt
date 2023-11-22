@@ -16,8 +16,7 @@ fun Route.lebedevRoutes() {
 //    }
 
     singlePageApplication {
-        useResources = true
-        filesPath = "/root/c-service/allfix-frontend/"
+        filesPath = "allfix-frontend"
         defaultPage = "index.html"
         ignoreFiles { it.endsWith(".txt") }
     }
