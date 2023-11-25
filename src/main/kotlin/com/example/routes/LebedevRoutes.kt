@@ -11,10 +11,6 @@ import org.koin.ktor.ext.inject
 
 fun Route.lebedevRoutes() {
 
-//    singlePageApplication {
-//        react("allfix-frontend")
-//    }
-
     singlePageApplication {
         filesPath = "allfix-frontend"
         defaultPage = "index.html"
