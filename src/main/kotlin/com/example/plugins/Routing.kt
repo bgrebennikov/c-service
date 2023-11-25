@@ -12,6 +12,10 @@ fun Application.configureRouting() {
             resources("static")
         }
 
+        static("/allfix-frontend") {
+            resources("allfix-frontend")
+        }
+
         route("/feedback/") {
             feedback()
         }
