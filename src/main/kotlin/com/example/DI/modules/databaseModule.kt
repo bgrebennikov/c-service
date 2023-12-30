@@ -1,5 +1,6 @@
 package com.example.DI.modules
 
+import com.example.database.DatabaseFactory
 import org.koin.dsl.module
 import org.litote.kmongo.coroutine.coroutine
 import org.litote.kmongo.reactivestreams.KMongo
@@ -12,5 +13,9 @@ val databaseModule = module {
             )
             .coroutine
             .getDatabase("CompService")
+    }
+
+    single {
+        DatabaseFactory
     }
 }

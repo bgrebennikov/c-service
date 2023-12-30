@@ -14,6 +14,7 @@ fun Application.module() {
     configureSerialization()
     configureTemplating()
     configureRouting()
+    configureDatabases()
 
     BotService().start()
 }

@@ -11,7 +11,9 @@ fun Application.configureKoin(){
             databaseModule,
             ordersModule,
             telegramModule,
-            contactsModule
+            contactsModule,
+
+            devicesModule
         )
     }
 }
