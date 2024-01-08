@@ -5,7 +5,7 @@ ktor:
   deployment:
     port: 8080
 database:
-  url: "jdbc:postgresql://test.xn----7sbhk0agcvocgm6j.xn--p1ai:49153/pcweb_db"
+  url: "jdbc:postgresql://0.0.0.0:5432/pcweb_db"
   user: "admin"
   driver: "org.postgresql.Driver"
   password: "Icu25050032%#"
