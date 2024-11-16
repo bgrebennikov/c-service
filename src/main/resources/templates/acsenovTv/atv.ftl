@@ -356,12 +356,12 @@
 
                         <div class="akc">
                             <div class="item">
-                                <img data-src="/static/acsenovTv/img/img/1-1.png" alt="">
+                                <img data-src="/static/acsenovTv/img/img/img.png" alt="">
                                 <p><b>Скидка - 10%</b> новым клиентам</p>
                             </div>
 
                             <div class="item">
-                                <img data-src="/static/acsenovTv/img/img/1-2.png" alt="">
+                                <img data-src="/static/acsenovTv/img/img/imgtwo.png" alt="">
                                 <p><b>Скидка - 15%</b> пенсионерам</p>
                             </div>
                         </div>
