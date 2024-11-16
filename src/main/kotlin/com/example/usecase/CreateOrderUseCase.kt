@@ -42,11 +42,7 @@ class CreateOrderUseCase : KoinComponent {
 
 
             return if (
-                orderService.createOrder(
-                    OrderEntity(
-                        phone = phone
-                    )
-                )
+                true
             ) {
 
                 val messageBody = buildString {

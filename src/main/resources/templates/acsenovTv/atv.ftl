@@ -11,13 +11,11 @@
     <title>Ремонт Телевизоров в ${city.name_prep} недорого на дому</title>
     <meta name="description" content="Ремонт ЖК Телевизоров в ${city.name_prep} и области на дому по самым низким ценам в городе! ">
 
-    <script type="text/javascript"> (function ab(){ var request = new XMLHttpRequest(); request.open('GET', "https://scripts.botfaqtor.ru/one/54150", false); request.send(); if(request.status == 200) eval(request.responseText); })(); </script>
-
 </head>
 <body>
 
 <div type="button" class="callback-bt-tel mob_only">
-    <a href="tel:+79874363073">
+    <a href="tel:+79934710049">
         <div class="text-call">
             <i class="fa fa-phone"><img style="width: 23px;" src="/static/acsenovtv/img/call.svg" alt=""></i>
         </div>
@@ -53,7 +51,7 @@
                     </div>
                 </div>
                 <div class="tel">
-                    <a href="tel:+79874363073">+7 (987) 436-30-73</a>
+                    <a href="tel:+79934710049">+7 (993) 471-00-49</a>
                     <p>Пн-Вс: с 07:00 до 23:45</p>
                 </div>
             </div>
@@ -174,7 +172,7 @@
             <div class="forma_dop">
                 <div class="tel">
                     <p>Звоните:</p>
-                    <a href="tel:+79874363073">+7 (987) 436-30-73</a>
+                    <a href="tel:+79934710049">+7 (993) 471-00-49</a>
                 </div>
                 <hr>
                 <div class="soc">
@@ -392,7 +390,7 @@
                         <div class="tel">
                             <p>Работаем Пн-Вс: с 07:00 до 23:45
                             </p>
-                            <a href="tel:+79874363073">+7 (987) 436-30-73</a>
+                            <a href="tel:+79934710049">+7 (993) 471-00-49</a>
                         </div>
 
                         <div class="soc">
@@ -507,7 +505,7 @@
                     <div class="tel">
                         <p>Работаю Пн-Вс: с 07:00 до 23:45
                         </p>
-                        <a href="tel:+79874363073">+7 (987) 436-30-73</a>
+                        <a href="tel:+79934710049">+7 (993) 471-00-49</a>
                     </div>
 
                     <div class="form">
@@ -580,7 +578,7 @@
 
             <div class="cont">
                 <p>Звоните прямо сейчас:</p>
-                <a href="tel:+79874363073">+7 (987) 436-30-73</a>
+                <a href="tel:+79934710049">+7 (993) 471-00-49</a>
             </div>
 
             <div class=" cont soc">

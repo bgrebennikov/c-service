@@ -29,7 +29,7 @@ class BotService : KoinComponent {
 
     private val contactsService: ContactsService by inject()
 
-        private var bot: TelegramBot = telegramBot("6215463347:AAEA3y87LiGwTZ4X3E4e50U2BEAQaFLhlbc")
+        private var bot: TelegramBot = telegramBot("6215463347:AAHgc6T87VrZPAOfnbXLKXlu0sGcAZis3O4")
 //    private var bot: TelegramBot = telegramBot("6398335632:AAGeTtM3yNHNZd_W1BH5mNzc8EqYWUmKLI0") // (test bot)
 
     private val scope = CoroutineScope(Dispatchers.IO)
@@ -39,7 +39,7 @@ class BotService : KoinComponent {
     fun start() {
         scope.launch {
             telegramBotWithBehaviourAndFSMAndStartLongPolling(
-                "6215463347:AAEA3y87LiGwTZ4X3E4e50U2BEAQaFLhlbc",
+                "6215463347:AAHgc6T87VrZPAOfnbXLKXlu0sGcAZis3O4",
                 CoroutineScope(Dispatchers.IO),
                 onStateHandlingErrorHandler = BotStateErrorHandler(),
                 defaultExceptionsHandler = {

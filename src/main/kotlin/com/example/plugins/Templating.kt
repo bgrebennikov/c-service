@@ -17,20 +17,27 @@ fun Application.configureTemplating() {
 
         host(
             "xn-----6kcjnd6aiezscikejc8m.xn--p1ai"
-        ){
+        ) {
             pcRepairRoutes()
         }
 
+        // починим сервис
+        host("xn----dtbikadyghjske7e.xn--p1ai") {
+            route("/") {
+                acsenovTvRoutes()
+            }
+        }
+
         // мастер-крылов.рф
-        host("xn----7sbhk0agcvocgm6j.xn--p1ai"){
+        host("xn----7sbhk0agcvocgm6j.xn--p1ai") {
             pcRepairRoutes()
-            route("/tv"){
+            route("/tv") {
                 krylowTvRoutes()
             }
-            route("/coolers"){
+            route("/coolers") {
                 kCoolersRoutes()
             }
-            route("/washing"){
+            route("/washing") {
                 krylowWashingRoutes()
             }
         }
@@ -42,46 +49,46 @@ fun Application.configureTemplating() {
 //            }
 //        }
 
-        host("washrepair.ru"){
+        host("washrepair.ru") {
 
-            route("/remont"){
+            route("/remont") {
                 krylowCommonRoutes()
             }
 
-            route("/coolers"){
+            route("/coolers") {
                 coolersRepairRoutes()
             }
         }
 
         // мастер-аксенов.рф
-        host("xn----7sbbimc8alpkqkfi.xn--p1ai"){
+        host("xn----dtbikadyghjske7e.xn--p1ai") {
             washRepairRoutes()
 
-            route("/coolers"){
+            route("/coolers") {
                 coolersRepairRoutes()
             }
 
-            route("/tv"){
+            route("/") {
                 acsenovTvRoutes()
             }
 
         }
 
-        host("tvmaster.ru"){
-            route("/"){
+        host("tvmaster.ru") {
+            route("/") {
                 acsenovTvRoutes()
             }
         }
 
-        host("coolersrepair.ru"){
+        host("coolersrepair.ru") {
             krylowWashingRoutes()
         }
 
-        host("192.168.13.210"){
+        host("192.168.13.210") {
             krylowWashingRoutes()
         }
 
-        host("127.0.0.1"){
+        host("127.0.0.1") {
             lebedevRoutes()
         }
 
